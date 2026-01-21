@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inside My Brain 🧠 | Madhuranga</title>
+
+  <!-- Tailwind config -->
+  <script>
+    window.tailwind = {
+      config: {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brain: '#6366f1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #eef2ff, #fdf2f8);
+    }
+    .dark body {
+      background: radial-gradient(circle at top, #020617, #020617);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen text-gray-800 dark:text-slate-100">
+
+<!-- ================= HEADER ================= -->
+<header class="flex justify-between items-center px-6 py-6 max-w-6xl mx-auto">
+  <h1 class="text-2xl font-bold">🧠 Inside My Brain</h1>
+
+  <button
+    id="theme-toggle"
+    class="px-3 py-2 rounded-lg border
+           border-gray-300 dark:border-slate-700
+           bg-white dark:bg-slate-800"
+  >
+    🌙
+  </button>
+</header>
+
+<!-- ================= CENTER BRAIN ================= -->
+<section class="relative max-w-6xl mx-auto px-6 py-24">
+
+  <!-- Center Node -->
+  <div class="mx-auto w-72 h-72 rounded-full bg-white dark:bg-slate-900
+              border-4 border-brain shadow-xl flex flex-col
+              items-center justify-center text-center z-10 relative">
+    <img
+      src="profile-image/maduranga-senadheera.jpg"
+      class="w-24 h-24 rounded-full border-4 border-indigo-300 mb-3"
+    />
+    <h2 class="text-xl font-bold">Madhuranga</h2>
+    <p class="text-sm text-gray-600 dark:text-slate-400">
+      Senior Full Stack Developer<br/>
+      AI · React · Systems
+    </p>
+  </div>
+
+  <!-- CONNECTION LINES -->
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <div class="w-full h-full border border-dashed border-indigo-300 dark:border-indigo-700 rounded-full"></div>
+  </div>
+
+  <!-- ================= NODES ================= -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-20">
+
+    <!-- Skills -->
+    <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow border-4 border-blue-200">
+      <h3 class="text-xl font-bold mb-2">🧩 Skills (Neurons)</h3>
+      <ul class="space-y-1">
+        <li>⚛ React · Next.js · TypeScript</li>
+        <li>⚙ Node.js · NestJS · APIs</li>
+        <li>🗄 PostgreSQL · MongoDB</li>
+        <li>🧠 Architecture · Microservices</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow border-4 border-green-200">
+      <h3 class="text-xl font-bold mb-2">🏗 Projects (Connections)</h3>
+      <ul class="space-y-1">
+        <li>⚽ KitCrew — E-commerce</li>
+        <li>🏛 TAMM — Gov Platform</li>
+        <li>📚 Read Buddy — OCR + Audio</li>
+        <li>🤖 Treema — AI Inbox</li>
+      </ul>
+    </div>
+
+    <!-- AI -->
+    <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow border-4 border-purple-200">
+      <h3 class="text-xl font-bold mb-2">🤖 AI Thinking Paths</h3>
+      <ul class="space-y-1">
+        <li>🧠 OpenAI & Gemini</li>
+        <li>🔗 LangChain (tools & memory)</li>
+        <li>🕸 LangGraph (decision flows)</li>
+        <li>✨ Agent-based reasoning</li>
+      </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow border-4 border-pink-200">
+      <h3 class="text-xl font-bold mb-2">🧭 Experience (Memory)</h3>
+      <ul class="space-y-1">
+        <li>10+ years building systems</li>
+        <li>Government & enterprise scale</li>
+        <li>Performance & SEO focus</li>
+        <li>Mentoring & architecture</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-12 text-gray-600 dark:text-slate-400">
+  Thoughts are connected • Systems are intentional 🧠  
+  <br />© 2026 Madhuranga Senadheera
+</footer>
+
+<!-- ================= THEME TOGGLE ================= -->
+<script>
+  const root = document.documentElement
+  const toggle = document.getElementById('theme-toggle')
+
+  function setTheme(isDark) {
+    root.classList.toggle('dark', isDark)
+    localStorage.theme = isDark ? 'dark' : 'light'
+    toggle.textContent = isDark ? '☀️' : '🌙'
+  }
+
+  const storedTheme = localStorage.getItem('theme')
+  const prefersDark =
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  const initialDark = storedTheme
+    ? storedTheme === 'dark'
+    : prefersDark
+
+  setTheme(initialDark)
+
+  toggle.addEventListener('click', () => {
+    setTheme(!root.classList.contains('dark'))
+  })
+</script>
+
+</body>
+</html>
