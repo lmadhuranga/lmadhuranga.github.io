@@ -21,9 +21,11 @@
       z-index: 50;
       padding: 24px;
     }
+
     .image-lightbox.is-open {
       display: flex;
     }
+
     .image-lightbox img {
       max-width: min(1200px, 92vw);
       max-height: 90vh;
@@ -31,15 +33,18 @@
       border-radius: 12px;
       background: #fff;
     }
+
     .image-lightbox #lightbox-caption {
       color: #f8fafc;
     }
+
     .image-lightbox #lightbox-caption ul {
       list-style: disc;
       margin: 8px 0 0;
       padding-left: 20px;
       text-align: left;
     }
+
     .image-lightbox #lightbox-caption a {
       color: #93c5fd;
       text-decoration: underline;
@@ -52,11 +57,8 @@
   <!-- ================= HEADER ================= -->
   <header class="bg-white border-b">
     <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center gap-8">
-      <img
-        src="profile-image/maduranga-senadheera.jpg"
-        alt="Maduranga Senadheera"
-        class="w-48 h-48 sm:w-36 sm:h-36 md:w-60 md:h-60 rounded-full object-cover border shadow-md zoomable cursor-zoom-in"
-      />
+      <img src="profile-image/maduranga-senadheera.jpg" alt="Maduranga Senadheera"
+        class="w-48 h-48 sm:w-36 sm:h-36 md:w-60 md:h-60 rounded-full object-cover border shadow-md zoomable cursor-zoom-in" />
       <div>
         <h1 class="text-3xl font-bold">Maduranga Senadheera</h1>
         <p class="text-lg text-blue-600 mt-1">
@@ -165,7 +167,7 @@
 
       </div>
     </section>
-    
+
     <!-- PROJECTS -->
     <section>
       <h2 class="text-2xl font-bold mb-8">Projects</h2>
@@ -269,71 +271,62 @@
     <section>
       <h2 class="text-2xl font-bold mb-6">Certifications</h2>
 
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Advanced React -->
         <figure class="bg-white border rounded-xl overflow-hidden">
-          <a href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ" target="_blank"
-            rel="noopener noreferrer" class="block">
-            <img
-              src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg"
-              class="w-full zoomable cursor-zoom-in"
-              alt="Advanced React"
-            />
-            <figcaption class="p-4 text-sm text-gray-700 space-y-2">
-              <div class="font-medium">
-                Advanced React
-              </div>
-              <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
-                <li>Create robust and reusable components with advanced techniques and learn different patterns to reuse
-                  common behavior</li>
-                <li>Interact with a remote server and fetch and post data via an API</li>
-                <li>Seamlessly test React applications with React Testing Library</li>
-                <li>Integrate commonly used React libraries to streamline your application development</li>
-              </ul>
-              <div class="text-xs">
-                <a
-                  href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="underline text-blue-600"
-                >
-                  Verify certificate
-                </a>
-              </div>
-            </figcaption>
-          </a>
+          <img src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg" class="w-full zoomable cursor-zoom-in"
+            alt="Advanced React Certificate" />
+
+          <figcaption class="p-5 space-y-3">
+            <h3 class="text-lg font-semibold">
+              Advanced React
+            </h3>
+
+            <p class="text-sm text-gray-600">
+              Coursera · Meta
+            </p>
+
+            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+              <li>Advanced component patterns & reusability</li>
+              <li>API integration & async data handling</li>
+              <li>Testing with React Testing Library</li>
+            </ul>
+
+            <a href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ" target="_blank"
+              rel="noopener noreferrer" class="inline-block text-sm text-blue-600 underline">
+              Verify certificate
+            </a>
+          </figcaption>
         </figure>
+
+        <!-- Agentic AI -->
         <figure class="bg-white border rounded-xl overflow-hidden">
-          <a href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ" target="_blank"
-            rel="noopener noreferrer" class="block">
-            <img
-              src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg"
-              class="w-full zoomable cursor-zoom-in"
-              alt="Agentic AI"
-            />
-            <figcaption class="p-4 text-sm text-gray-700 space-y-2">
-              <div class="font-medium">
-                Agentic AI with LangChain and LangGraph
-              </div>
-              <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
-                <li>Build agentic AI systems using LangChain and LangGraph to support memory, iteration, and conditional
-                  logic</li>
-                <li>Design and implement self-improving agents using Reflection, Reflexion, and ReAct architectures</li>
-                <li>Apply agent orchestration techniques to build collaborative multi-agent systems</li>
-                <li>Implement agentic RAG systems that route queries and support retrieval-enhanced reasoning</li>
-              </ul>
-              <div class="text-xs">
-                <a
-                  href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="underline text-blue-600"
-                >
-                  Verify certificate
-                </a>
-              </div>
-            </figcaption>
-          </a>
+          <img src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg"
+            class="w-full zoomable cursor-zoom-in" alt="Agentic AI with LangChain and LangGraph" />
+
+          <figcaption class="p-5 space-y-3">
+            <h3 class="text-lg font-semibold">
+              Agentic AI with LangChain & LangGraph
+            </h3>
+
+            <p class="text-sm text-gray-600">
+              Coursera . IBM
+            </p>
+
+            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+              <li>Agent-based AI workflows & decision graphs</li>
+              <li>Reflection, ReAct & multi-agent orchestration</li>
+              <li>Agentic RAG & retrieval-enhanced reasoning</li>
+            </ul>
+
+            <a href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ" target="_blank"
+              rel="noopener noreferrer" class="inline-block text-sm text-blue-600 underline">
+              Verify certificate
+            </a>
+          </figcaption>
         </figure>
+
       </div>
     </section>
   </main>
