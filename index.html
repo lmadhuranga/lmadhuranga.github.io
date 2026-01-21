@@ -9,47 +9,10 @@
   <meta name="description"
     content="Senior Full Stack Developer with 10+ years of experience in React, Next.js, Node.js, NestJS, and enterprise platforms." />
 
-  <script src="assets/tawilndcss-3.4.17.css"></script>
-  <style>
-    .image-lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.8);
-      align-items: center;
-      justify-content: center;
-      z-index: 50;
-      padding: 24px;
-    }
+  <!-- Your local Tailwind build -->
+  <link rel="stylesheet" href="assets/tailwindcss-3.4.17.css">
+  <link rel="stylesheet" href="assets/style.css">
 
-    .image-lightbox.is-open {
-      display: flex;
-    }
-
-    .image-lightbox img {
-      max-width: min(1200px, 92vw);
-      max-height: 90vh;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
-      border-radius: 12px;
-      background: #fff;
-    }
-
-    .image-lightbox #lightbox-caption {
-      color: #f8fafc;
-    }
-
-    .image-lightbox #lightbox-caption ul {
-      list-style: disc;
-      margin: 8px 0 0;
-      padding-left: 20px;
-      text-align: left;
-    }
-
-    .image-lightbox #lightbox-caption a {
-      color: #93c5fd;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
@@ -58,9 +21,8 @@
   <header class="bg-white border-b">
     <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center gap-8">
 
-      <img src="profile-image/maduranga-senadheera.jpg" alt="Maduranga Senadheera" class="w-48 h-48 sm:w-36 sm:h-36 md:w-60 md:h-60
-             rounded-full object-cover border shadow-md
-             zoomable cursor-zoom-in" />
+      <img src="profile-image/maduranga-senadheera.jpg" alt="Maduranga Senadheera"
+        class="w-48 h-48 sm:w-36 sm:h-36 md:w-60 md:h-60 rounded-full object-cover border shadow-md zoomable cursor-zoom-in" />
 
       <div>
         <h1 class="text-3xl font-bold">Maduranga Senadheera</h1>
@@ -75,319 +37,276 @@
           Strong focus on performance, clean architecture, and modern JavaScript.
         </p>
 
-        <!-- CONTACT INFO -->
-        <div class="mt-4 flex flex-col gap-2 text-sm text-gray-600
-               sm:flex-row sm:flex-wrap sm:gap-4">
+        <div class="mt-4 flex flex-col gap-2 text-sm text-gray-600 sm:flex-row sm:flex-wrap sm:gap-4">
           <span>📍 Dubai, UAE</span>
           <span class="break-all sm:break-normal">
-            <a alt="Maduranga Senadheera Email" href="email:lilan.maduranga@gmail.com">📧 lilan.maduranga@gmail.com</a>
+            📧 <a class="hover:underline" href="mailto:lilan.maduranga@gmail.com">lilan.maduranga@gmail.com</a>
           </span>
-          <span><a alt="Maduranga Senadheera Mobile" href="tel:+971521344027">📞 +971 52 134 4027</a></span>
+          <span>
+            📞 <a class="hover:underline" href="tel:+971521344027">+971 52 134 4027</a>
+          </span>
         </div>
 
-        <!-- CTA -->
-        <div class="mt-5">
-          <a href="cv/Madhuranga_Senadheera_CV.pdf" download class="inline-flex items-center gap-2
-         px-4 py-2
-         border border-gray-300
-         text-gray-700
-         rounded-full text-sm
-         hover:bg-gray-100 transition">
+        <div class="mt-5 flex gap-3 flex-wrap">
+          <a href="cv/Madhuranga_Senadheera_CV.pdf" download
+            class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-full text-sm hover:bg-gray-100 transition">
             📄 Download CV
           </a>
 
-          <a href="https://www.linkedin.com/in/lmadhuranga/" target="_blank" class="inline-flex items-center gap-2
-         px-4 py-2
-         border border-blue-500
-         text-blue-600
-         rounded-full text-sm
-         hover:bg-blue-50 transition">
+          <a href="https://www.linkedin.com/in/lmadhuranga/" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 border border-blue-500 text-blue-600 rounded-full text-sm hover:bg-blue-50 transition">
             LinkedIn
           </a>
 
+          <a href="https://github.com/lmadhuranga/" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-full text-sm hover:bg-gray-100 transition">
+            GitHub
+          </a>
         </div>
-
       </div>
     </div>
   </header>
 
   <!-- ================= MAIN ================= -->
-  <main class="max-w-6xl mx-auto px-6 pb-16 pt-4 space-y-20">
+  <main class="max-w-6xl mx-auto px-6 pb-16 space-y-20">
 
     <!-- ABOUT -->
-    <section>
-      <h2 class="text-2xl font-bold mb-4">About</h2>
-      <p class="text-gray-700 max-w-3xl leading-loose">
-        I am a Senior Full Stack Developer specializing in React, Next.js,
-        Node.js, and NestJS. I have worked on large-scale government platforms,
-        fintech systems, and multi-tenant e-commerce products.
-        I enjoy building high-performance, maintainable systems
-        and mentoring teams in best practices.
-      </p>
+    <section class="pt-12 border-t border-gray-200 sm:border-0">
+      <div class="sm:bg-slate-50 sm:rounded-2xl sm:px-8 sm:py-10">
+        <h2 class="text-2xl font-bold mb-4">About</h2>
+        <p class="text-gray-700 max-w-3xl leading-loose">
+          I am a Senior Full Stack Developer specializing in React, Next.js, Node.js, and NestJS.
+          I have worked on large-scale government platforms, fintech systems, and multi-tenant e-commerce products.
+          I enjoy building high-performance, maintainable systems and mentoring teams in best practices.
+        </p>
+      </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section>
-      <h2 class="text-2xl font-bold mb-8">Experience</h2>
+    <section class="pt-12 border-t border-gray-200 sm:border-0">
+      <div class="sm:bg-slate-50 sm:rounded-2xl sm:px-8 sm:py-10">
+        <h2 class="text-2xl font-bold mb-8">Experience</h2>
 
-      <div class="space-y-12">
+        <div class="space-y-12">
 
-        <!-- Voizzit -->
-        <div class="sm:bg-white sm:p-6 sm:rounded-xl sm:border">
-          <h3 class="text-xl font-semibold leading-snug">
-            Senior React & Node.js Developer
-          </h3>
+          <!-- Voizzit -->
+          <div class="sm:bg-white sm:p-6 sm:rounded-xl sm:border">
+            <h3 class="text-xl font-semibold leading-snug">
+              Senior React & Node.js Developer
+            </h3>
+            <p class="text-gray-600 mt-1">
+              Voizzit Information Technology LLC · Dubai, UAE
+            </p>
+            <p class="text-sm text-gray-500 mb-3">
+              Sep 2023 – Present
+            </p>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2 sm:list-inside sm:pl-0">
+              <li>Architected a multi-tenant e-commerce platform using Next.js and Node.js</li>
+              <li>Implemented SSR/SSG for improved SEO and Lighthouse performance</li>
+              <li>Built reusable, modular UI components</li>
+              <li>Implemented multi-language and multi-currency support</li>
+              <li>Collaborated with QA and design teams in Agile sprints</li>
+            </ul>
+          </div>
 
-          <p class="text-gray-600 mt-1">
-            Voizzit Information Technology LLC · Dubai, UAE
-          </p>
+          <!-- TAMM -->
+          <div class="sm:bg-white sm:p-6 sm:rounded-xl sm:border">
+            <h3 class="text-xl font-semibold leading-snug">
+              React & Node.js Developer
+            </h3>
+            <p class="text-gray-600 mt-1">
+              Tahaluf Al Emarat · Abu Dhabi, UAE
+            </p>
+            <p class="text-sm text-gray-500 mb-3">
+              Jan 2023 – Aug 2023
+            </p>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2 sm:list-inside sm:pl-0">
+              <li>Developed frontend interfaces for Abu Dhabi Government TAMM platform</li>
+              <li>Built backend and middleware APIs using Node.js</li>
+              <li>Integrated multiple government systems securely</li>
+              <li>Ensured scalability, reliability, and performance</li>
+            </ul>
+          </div>
 
-          <p class="text-sm text-gray-500 mb-3">
-            Sep 2023 – Present
-          </p>
+          <!-- Softlogic -->
+          <div class="sm:bg-white sm:p-6 sm:rounded-xl sm:border">
+            <h3 class="text-xl font-semibold leading-snug">
+              Senior Software Developer
+            </h3>
+            <p class="text-gray-600 mt-1">
+              Softlogic Life Insurance · Sri Lanka
+            </p>
+            <p class="text-sm text-gray-500 mb-3">
+              Oct 2019 – Dec 2022
+            </p>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2 sm:list-inside sm:pl-0">
+              <li>Developed internal branch management systems used by 2,000+ branches</li>
+              <li>Built online investment and payment platforms</li>
+              <li>Implemented CRM workflows and resolved production issues</li>
+            </ul>
+          </div>
 
-          <ul class="list-disc pl-5 text-gray-700 space-y-2
-                 sm:list-inside sm:pl-0">
-            <li>Architected a multi-tenant e-commerce platform using Next.js and Node.js</li>
-            <li>Implemented SSR/SSG for improved SEO and Lighthouse performance</li>
-            <li>Built reusable, modular UI components</li>
-            <li>Implemented multi-language and multi-currency support</li>
-            <li>Collaborated with QA and design teams in Agile sprints</li>
-          </ul>
         </div>
-
-        <!-- TAMM -->
-        <div class="sm:bg-white sm:p-6 sm:rounded-xl sm:border">
-          <h3 class="text-xl font-semibold leading-snug">
-            React & Node.js Developer
-          </h3>
-
-          <p class="text-gray-600 mt-1">
-            Tahaluf Al Emarat · Abu Dhabi, UAE
-          </p>
-
-          <p class="text-sm text-gray-500 mb-3">
-            Jan 2023 – Aug 2023
-          </p>
-
-          <ul class="list-disc pl-5 text-gray-700 space-y-2
-                 sm:list-inside sm:pl-0">
-            <li>Developed frontend interfaces for Abu Dhabi Government TAMM platform</li>
-            <li>Built backend and middleware APIs using Node.js</li>
-            <li>Integrated multiple government systems securely</li>
-            <li>Ensured scalability, reliability, and performance</li>
-          </ul>
-        </div>
-
-        <!-- Softlogic -->
-        <div class="sm:bg-white sm:p-6 sm:rounded-xl sm:border">
-          <h3 class="text-xl font-semibold leading-snug">
-            Senior Software Developer
-          </h3>
-
-          <p class="text-gray-600 mt-1">
-            Softlogic Life Insurance · Sri Lanka
-          </p>
-
-          <p class="text-sm text-gray-500 mb-3">
-            Oct 2019 – Dec 2022
-          </p>
-
-          <ul class="list-disc pl-5 text-gray-700 space-y-2
-                 sm:list-inside sm:pl-0">
-            <li>Developed internal branch management systems used by 2,000+ branches</li>
-            <li>Built online investment and payment platforms</li>
-            <li>Implemented CRM workflows and resolved production issues</li>
-          </ul>
-        </div>
-
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section>
-      <h2 class="text-2xl font-bold mb-8">Projects</h2>
+    <section class="pt-12 border-t border-gray-200 sm:border-0">
+      <div class="sm:bg-slate-50 sm:rounded-2xl sm:px-8 sm:py-10">
+        <h2 class="text-2xl font-bold mb-8">Projects</h2>
 
-      <div class="space-y-14 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
+        <div class="space-y-14 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
 
-        <!-- KitCrew -->
-        <div class="sm:bg-blue-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
-          <img src="projects/kitcrew/kitcrew.png" alt="KitCrew"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
-          <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
-            <h3 class="text-xl sm:text-base font-semibold">
-              KitCrew – E-Commerce Platform
-            </h3>
-            <p class="text-base sm:text-sm text-gray-700">
-              Multi-tenant soccer jersey e-commerce platform with SSR, SEO optimization,
-              multi-language and multi-currency support.
-            </p>
-            <p class="text-base sm:text-xs text-gray-500">
-              Tech: Next.js · React · Node.js · PostgreSQL
-            </p>
+          <!-- KitCrew -->
+          <div class="sm:bg-blue-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
+            <img src="projects/kitcrew/kitcrew.png" alt="KitCrew"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
+            <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
+              <h3 class="text-xl sm:text-base font-semibold">KitCrew – E-Commerce Platform</h3>
+              <p class="text-base sm:text-sm text-gray-700">
+                Multi-tenant soccer jersey e-commerce platform with SSR, SEO optimization,
+                multi-language and multi-currency support.
+              </p>
+              <p class="text-base sm:text-xs text-gray-500">
+                Tech: Next.js · React · Node.js · PostgreSQL
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- TAMM -->
-        <div class="sm:bg-slate-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
-          <img src="projects/tamm/tamm-home-page.png" alt="TAMM"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
-          <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
-            <h3 class="text-xl sm:text-base font-semibold">
-              TAMM – Government Services Platform
-            </h3>
-            <p class="text-base sm:text-sm text-gray-700">
-              Abu Dhabi Government digital platform integrating multiple services
-              into a unified citizen experience.
-            </p>
-            <p class="text-base sm:text-xs text-gray-500">
-              Tech: React · Node.js · Government APIs
-            </p>
+          <!-- TAMM -->
+          <div class="sm:bg-slate-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
+            <img src="projects/tamm/tamm-home-page.png" alt="TAMM"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
+            <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
+              <h3 class="text-xl sm:text-base font-semibold">TAMM – Government Services Platform</h3>
+              <p class="text-base sm:text-sm text-gray-700">
+                Abu Dhabi Government digital platform integrating multiple services into a unified citizen experience.
+              </p>
+              <p class="text-base sm:text-xs text-gray-500">
+                Tech: React · Node.js · Government APIs
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- Treema -->
-        <div class="sm:bg-purple-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
-          <img src="projects/treema/treema-unified-operator-desk.png" alt="Treema"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
-          <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
-            <h3 class="text-xl sm:text-base font-semibold">
-              Treema – AI Operator Desk
-            </h3>
-            <p class="text-base sm:text-sm text-gray-700">
-              AI-powered unified inbox that analyzes messages, detects intent
-              and sentiment, and suggests responses using LLMs.
-            </p>
-            <p class="text-base sm:text-xs text-gray-500">
-              Tech: React · Node.js · OpenAI · Gemini · LangChain · LangGraph
-            </p>
+          <!-- Treema -->
+          <div class="sm:bg-purple-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
+            <img src="projects/treema/treema-unified-operator-desk.png" alt="Treema"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
+            <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
+              <h3 class="text-xl sm:text-base font-semibold">Treema – AI Operator Desk</h3>
+              <p class="text-base sm:text-sm text-gray-700">
+                AI-powered unified inbox that analyzes messages, detects intent and sentiment,
+                and suggests responses using LLMs.
+              </p>
+              <p class="text-base sm:text-xs text-gray-500">
+                Tech: React · Node.js · OpenAI · Gemini · LangChain · LangGraph
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- Read Buddy -->
-        <div class="sm:bg-green-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
-          <img src="projects/read-buddy/read-buddy.png" alt="Read Buddy"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
-          <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
-            <h3 class="text-xl sm:text-base font-semibold">
-              Read Buddy – Read-to-Me App
-            </h3>
-            <p class="text-base sm:text-sm text-gray-700">
-              OCR-based application that extracts text from images,
-              generates audio narration, and highlights words interactively.
-            </p>
-            <p class="text-base sm:text-xs text-gray-500">
-              Tech: React · OCR · AI · Text-to-Speech
-            </p>
+          <!-- Read Buddy -->
+          <div class="sm:bg-green-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
+            <img src="projects/read-buddy/read-buddy.png" alt="Read Buddy"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
+            <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
+              <h3 class="text-xl sm:text-base font-semibold">Read Buddy – Read-to-Me App</h3>
+              <p class="text-base sm:text-sm text-gray-700">
+                OCR-based application that extracts text from images, generates audio narration,
+                and highlights words interactively.
+              </p>
+              <p class="text-base sm:text-xs text-gray-500">
+                Tech: React · OCR · AI · Text-to-Speech
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- Voizzit -->
-        <div class="sm:bg-indigo-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
-          <img src="projects/voizzit/voizzit-home-page.png" alt="Voizzit"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
-          <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
-            <h3 class="text-xl sm:text-base font-semibold">
-              Voizzit – Commerce Platform
-            </h3>
-            <p class="text-base sm:text-sm text-gray-700">
-              Large-scale commerce and product platform focusing on
-              performance, SEO, and reusable UI architecture.
-            </p>
-            <p class="text-base sm:text-xs text-gray-500">
-              Tech: Next.js · React · Node.js
-            </p>
+          <!-- Voizzit -->
+          <div class="sm:bg-indigo-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
+            <img src="projects/voizzit/voizzit-home-page.png" alt="Voizzit"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
+            <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
+              <h3 class="text-xl sm:text-base font-semibold">Voizzit – Commerce Platform</h3>
+              <p class="text-base sm:text-sm text-gray-700">
+                Large-scale commerce and product platform focusing on performance, SEO,
+                and reusable UI architecture.
+              </p>
+              <p class="text-base sm:text-xs text-gray-500">
+                Tech: Next.js · React · Node.js
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- Todo App -->
-        <div class="sm:bg-gray-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
-          <img src="projects/todo-application.png" alt="Todo Application"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
-          <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
-            <h3 class="text-xl sm:text-base font-semibold">
-              Todo Application
-            </h3>
-            <p class="text-base sm:text-sm text-gray-700">
-              Simple task management app demonstrating clean state management
-              and component structure.
-            </p>
-            <p class="text-base sm:text-xs text-gray-500">
-              Tech: React · TypeScript
-            </p>
+          <!-- Todo -->
+          <div class="sm:bg-gray-50 sm:border sm:rounded-xl sm:overflow-hidden project-card">
+            <img src="projects/todo-application.png" alt="Todo Application"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" />
+            <div class="mt-4 sm:mt-0 sm:p-4 space-y-3 max-w-prose">
+              <h3 class="text-xl sm:text-base font-semibold">Todo Application</h3>
+              <p class="text-base sm:text-sm text-gray-700">
+                Simple task management app demonstrating clean state management and component structure.
+              </p>
+              <p class="text-base sm:text-xs text-gray-500">
+                Tech: React · TypeScript
+              </p>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
 
     <!-- CERTIFICATIONS -->
-    <section>
-      <h2 class="text-2xl font-bold mb-6">Certifications</h2>
+    <section class="pt-12 border-t border-gray-200 sm:border-0">
+      <div class="sm:bg-slate-50 sm:rounded-2xl sm:px-8 sm:py-10">
+        <h2 class="text-2xl font-bold mb-6">Certifications</h2>
 
-      <div class="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-8">
+        <div class="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-8">
 
-        <!-- Advanced React -->
-        <figure class="sm:bg-white sm:border sm:rounded-xl sm:overflow-hidden sm:p-0">
+          <!-- Advanced React -->
+          <figure class="sm:bg-white sm:border sm:rounded-xl sm:overflow-hidden sm:p-0">
+            <img src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" alt="Advanced React Certificate" />
+            <figcaption class="mt-4 sm:mt-0 sm:p-5 space-y-3 max-w-prose">
+              <h3 class="text-lg font-semibold">Advanced React</h3>
+              <p class="text-base sm:text-sm text-gray-600">Coursera · Meta</p>
+              <ul class="list-disc pl-5 text-base sm:text-sm text-gray-700 space-y-2">
+                <li>Advanced component patterns & reusability</li>
+                <li>API integration & async data handling</li>
+                <li>Testing with React Testing Library</li>
+              </ul>
+              <a href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ" target="_blank"
+                rel="noopener noreferrer" class="inline-block text-base sm:text-sm text-blue-600 underline">
+                Verify certificate
+              </a>
+            </figcaption>
+          </figure>
 
-          <img src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" alt="Advanced React Certificate" />
+          <!-- Agentic AI -->
+          <figure class="sm:bg-white sm:border sm:rounded-xl sm:overflow-hidden sm:p-0">
+            <img src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg"
+              class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" alt="Agentic AI with LangChain and LangGraph" />
+            <figcaption class="mt-4 sm:mt-0 sm:p-5 space-y-3 max-w-prose">
+              <h3 class="text-lg font-semibold">Agentic AI with LangChain & LangGraph</h3>
+              <p class="text-base sm:text-sm text-gray-600">Coursera · IBM</p>
+              <ul class="list-disc pl-5 text-base sm:text-sm text-gray-700 space-y-2">
+                <li>Agent-based AI workflows & decision graphs</li>
+                <li>Reflection, ReAct & multi-agent orchestration</li>
+                <li>Agentic RAG & retrieval-enhanced reasoning</li>
+              </ul>
+              <a href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ" target="_blank"
+                rel="noopener noreferrer" class="inline-block text-base sm:text-sm text-blue-600 underline">
+                Verify certificate
+              </a>
+            </figcaption>
+          </figure>
 
-          <figcaption class="mt-4 sm:mt-0 sm:p-5 space-y-3 max-w-prose">
-            <h3 class="text-lg font-semibold">
-              Advanced React
-            </h3>
-
-            <p class="text-base sm:text-sm text-gray-600">
-              Coursera · Meta
-            </p>
-
-            <ul class="list-disc pl-5 text-base sm:text-sm text-gray-700 space-y-2">
-              <li>Advanced component patterns & reusability</li>
-              <li>API integration & async data handling</li>
-              <li>Testing with React Testing Library</li>
-            </ul>
-
-            <a href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ" target="_blank"
-              rel="noopener noreferrer" class="inline-block text-base sm:text-sm text-blue-600 underline">
-              Verify certificate
-            </a>
-          </figcaption>
-        </figure>
-
-        <!-- Agentic AI -->
-        <figure class="sm:bg-white sm:border sm:rounded-xl sm:overflow-hidden sm:p-0">
-
-          <img src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg"
-            class="w-full zoomable cursor-zoom-in sm:rounded-t-xl" alt="Agentic AI with LangChain and LangGraph" />
-
-          <figcaption class="mt-4 sm:mt-0 sm:p-5 space-y-3 max-w-prose">
-            <h3 class="text-lg font-semibold">
-              Agentic AI with LangChain & LangGraph
-            </h3>
-
-            <p class="text-base sm:text-sm text-gray-600">
-              Coursera · IBM
-            </p>
-
-            <ul class="list-disc pl-5 text-base sm:text-sm text-gray-700 space-y-2">
-              <li>Agent-based AI workflows & decision graphs</li>
-              <li>Reflection, ReAct & multi-agent orchestration</li>
-              <li>Agentic RAG & retrieval-enhanced reasoning</li>
-            </ul>
-
-            <a href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ" target="_blank"
-              rel="noopener noreferrer" class="inline-block text-base sm:text-sm text-blue-600 underline">
-              Verify certificate
-            </a>
-          </figcaption>
-        </figure>
-
+        </div>
       </div>
     </section>
 
   </main>
 
+  <!-- LIGHTBOX -->
   <div id="image-lightbox" class="image-lightbox" aria-hidden="true">
     <figure class="text-left max-w-3xl">
       <img id="lightbox-img" src="" alt="" />
@@ -395,69 +314,8 @@
     </figure>
   </div>
 
-  <script>
-    const lightbox = document.getElementById('image-lightbox')
-    const lightboxImg = document.getElementById('lightbox-img')
-    const lightboxCaption = document.getElementById('lightbox-caption')
-
-    function openLightbox(img) {
-      const figure = img.closest('figure')
-      const caption = figure ? figure.querySelector('figcaption') : null
-      const projectCard = img.closest('.project-card')
-      lightboxImg.src = img.src
-      lightboxImg.alt = img.alt || 'Image preview'
-      lightboxCaption.innerHTML = ''
-      if (caption) {
-        const clone = caption.cloneNode(true)
-        clone.removeAttribute('class')
-        clone.querySelectorAll('[class]').forEach((el) => el.removeAttribute('class'))
-        lightboxCaption.appendChild(clone)
-      } else if (projectCard) {
-        const title = projectCard.querySelector('h3')
-        const paragraphs = projectCard.querySelectorAll('p')
-        if (title) {
-          const titleEl = document.createElement('div')
-          titleEl.textContent = title.textContent
-          lightboxCaption.appendChild(titleEl)
-        }
-        if (paragraphs.length > 0) {
-          const descEl = document.createElement('p')
-          descEl.textContent = paragraphs[0].textContent
-          lightboxCaption.appendChild(descEl)
-        }
-        if (paragraphs.length > 1) {
-          const techEl = document.createElement('p')
-          techEl.textContent = paragraphs[1].textContent
-          lightboxCaption.appendChild(techEl)
-        }
-      } else {
-        lightboxCaption.textContent = img.alt || ''
-      }
-      lightbox.classList.add('is-open')
-      lightbox.setAttribute('aria-hidden', 'false')
-      document.body.style.overflow = 'hidden'
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove('is-open')
-      lightbox.setAttribute('aria-hidden', 'true')
-      lightboxImg.src = ''
-      lightboxCaption.textContent = ''
-      document.body.style.overflow = ''
-    }
-
-    document.querySelectorAll('img.zoomable').forEach((img) => {
-      img.addEventListener('click', (event) => {
-        event.preventDefault()
-        openLightbox(img)
-      })
-    })
-
-    lightbox.addEventListener('click', closeLightbox)
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') closeLightbox()
-    })
-  </script>
+  <!-- LIGHTBOX SCRIPT -->
+  <script src="assets/script.js"></script>
 
 </body>
 
