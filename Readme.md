@@ -3,7 +3,16 @@
 **Senior Full Stack Developer**
 
 <p align="center">
-  <img src="profile-image/maduranga-senadheera.jpg" width="180" alt="Maduranga Senadheera" />
+  <img
+    src="profile-image/maduranga-senadheera.jpg"
+    alt="Maduranga Senadheera"
+    width="180"
+    style="
+      border-radius: 50%;
+      border: 4px solid #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    "
+  />
 </p>
 
 📍 Dubai, UAE · 📧 [lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com) · 📞 +971 52 134 4027 ·
