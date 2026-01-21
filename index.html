@@ -9,8 +9,8 @@
   <meta name="description"
     content="Senior Full Stack Developer with 10+ years of experience in React, Next.js, Node.js, NestJS, and enterprise platforms." />
 
-  <!-- Your local Tailwind build -->
-  <link rel="stylesheet" href="assets/tailwindcss-3.4.17.css">
+  <!-- Local Tailwind build -->
+  <link rel="stylesheet" href="assets/tailwind.css">
   <link rel="stylesheet" href="assets/style.css">
 
 </head>
@@ -68,10 +68,10 @@
   </header>
 
   <!-- ================= MAIN ================= -->
-  <main class="max-w-6xl mx-auto px-6 pb-16 space-y-20">
+  <main class="max-w-6xl mx-auto px-6 pb-16 space-y-8">
 
     <!-- ABOUT -->
-    <section class="pt-12 border-t border-gray-200 sm:border-0">
+    <section class="pt-4 border-t border-gray-200 sm:border-0">
       <div class="sm:bg-slate-50 sm:rounded-2xl sm:px-8 sm:py-10">
         <h2 class="text-2xl font-bold mb-4">About</h2>
         <p class="text-gray-700 max-w-3xl leading-loose">
@@ -83,7 +83,7 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="pt-12 border-t border-gray-200 sm:border-0">
+    <section class="border-t border-gray-200 sm:border-0">
       <div class="sm:bg-slate-50 sm:rounded-2xl sm:px-8 sm:py-10">
         <h2 class="text-2xl font-bold mb-8">Experience</h2>
 
@@ -151,7 +151,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="pt-12 border-t border-gray-200 sm:border-0">
+    <section class="border-t border-gray-200 sm:border-0">
       <div class="sm:bg-slate-50 sm:rounded-2xl sm:px-8 sm:py-10">
         <h2 class="text-2xl font-bold mb-8">Projects</h2>
 
@@ -305,6 +305,14 @@
     </section>
 
   </main>
+  <!-- SMALL FOOTER -->
+  <footer class="py-6 text-center text-xs text-gray-400">
+    © <span id="year"></span> Maduranga Senadheera
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
 
   <!-- LIGHTBOX -->
   <div id="image-lightbox" class="image-lightbox" aria-hidden="true">
