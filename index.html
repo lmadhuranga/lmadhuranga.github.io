@@ -10,6 +10,41 @@
     content="Senior Full Stack Developer with 10+ years of experience in React, Next.js, Node.js, NestJS, and enterprise platforms." />
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .image-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.8);
+      align-items: center;
+      justify-content: center;
+      z-index: 50;
+      padding: 24px;
+    }
+    .image-lightbox.is-open {
+      display: flex;
+    }
+    .image-lightbox img {
+      max-width: min(1200px, 92vw);
+      max-height: 90vh;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .image-lightbox #lightbox-caption {
+      color: #f8fafc;
+    }
+    .image-lightbox #lightbox-caption ul {
+      list-style: disc;
+      margin: 8px 0 0;
+      padding-left: 20px;
+      text-align: left;
+    }
+    .image-lightbox #lightbox-caption a {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
@@ -17,8 +52,11 @@
   <!-- ================= HEADER ================= -->
   <header class="bg-white border-b">
     <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center gap-8">
-      <img src="profile-image/maduranga-senadheera.jpg" alt="Maduranga Senadheera" class="w-48 h-48 sm:w-36 sm:h-36 md:w-60 md:h-60
-         rounded-full object-cover border shadow-md" />
+      <img
+        src="profile-image/maduranga-senadheera.jpg"
+        alt="Maduranga Senadheera"
+        class="w-48 h-48 sm:w-36 sm:h-36 md:w-60 md:h-60 rounded-full object-cover border shadow-md zoomable cursor-zoom-in"
+      />
       <div>
         <h1 class="text-3xl font-bold">Maduranga Senadheera</h1>
         <p class="text-lg text-blue-600 mt-1">
@@ -135,8 +173,8 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- KitCrew -->
-        <div class="bg-white border rounded-xl overflow-hidden">
-          <img src="projects/kitcrew/kitcrew.png" alt="KitCrew" />
+        <div class="bg-white border rounded-xl overflow-hidden project-card">
+          <img src="projects/kitcrew/kitcrew.png" alt="KitCrew" class="zoomable cursor-zoom-in" />
           <div class="p-4 space-y-2">
             <h3 class="font-semibold">KitCrew – E-Commerce Platform</h3>
             <p class="text-sm text-gray-600">
@@ -150,8 +188,8 @@
         </div>
 
         <!-- TAMM -->
-        <div class="bg-white border rounded-xl overflow-hidden">
-          <img src="projects/tamm/tamm-home-page.png" alt="TAMM" />
+        <div class="bg-white border rounded-xl overflow-hidden project-card">
+          <img src="projects/tamm/tamm-home-page.png" alt="TAMM" class="zoomable cursor-zoom-in" />
           <div class="p-4 space-y-2">
             <h3 class="font-semibold">TAMM – Government Services Platform</h3>
             <p class="text-sm text-gray-600">
@@ -165,8 +203,8 @@
         </div>
 
         <!-- Treema -->
-        <div class="bg-white border rounded-xl overflow-hidden">
-          <img src="projects/treema/treema-unified-operator-desk.png" alt="Treema" />
+        <div class="bg-white border rounded-xl overflow-hidden project-card">
+          <img src="projects/treema/treema-unified-operator-desk.png" alt="Treema" class="zoomable cursor-zoom-in" />
           <div class="p-4 space-y-2">
             <h3 class="font-semibold">Treema – AI Operator Desk</h3>
             <p class="text-sm text-gray-600">
@@ -180,8 +218,8 @@
         </div>
 
         <!-- Read Buddy -->
-        <div class="bg-white border rounded-xl overflow-hidden">
-          <img src="projects/read-buddy/read-buddy.png" alt="Read Buddy" />
+        <div class="bg-white border rounded-xl overflow-hidden project-card">
+          <img src="projects/read-buddy/read-buddy.png" alt="Read Buddy" class="zoomable cursor-zoom-in" />
           <div class="p-4 space-y-2">
             <h3 class="font-semibold">Read Buddy – Read-to-Me App</h3>
             <p class="text-sm text-gray-600">
@@ -195,8 +233,8 @@
         </div>
 
         <!-- Voizzit -->
-        <div class="bg-white border rounded-xl overflow-hidden">
-          <img src="projects/voizzit/voizzit-home-page.png" alt="Voizzit" />
+        <div class="bg-white border rounded-xl overflow-hidden project-card">
+          <img src="projects/voizzit/voizzit-home-page.png" alt="Voizzit" class="zoomable cursor-zoom-in" />
           <div class="p-4 space-y-2">
             <h3 class="font-semibold">Voizzit – Commerce Platform</h3>
             <p class="text-sm text-gray-600">
@@ -210,8 +248,8 @@
         </div>
 
         <!-- Todo App -->
-        <div class="bg-white border rounded-xl overflow-hidden">
-          <img src="projects/todo-application.png" alt="Todo App" />
+        <div class="bg-white border rounded-xl overflow-hidden project-card">
+          <img src="projects/todo-application.png" alt="Todo App" class="zoomable cursor-zoom-in" />
           <div class="p-4 space-y-2">
             <h3 class="font-semibold">Todo Application</h3>
             <p class="text-sm text-gray-600">
@@ -235,7 +273,11 @@
         <figure class="bg-white border rounded-xl overflow-hidden">
           <a href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ" target="_blank"
             rel="noopener noreferrer" class="block">
-            <img src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg" class="w-full" alt="Advanced React" />
+            <img
+              src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg"
+              class="w-full zoomable cursor-zoom-in"
+              alt="Advanced React"
+            />
             <figcaption class="p-4 text-sm text-gray-700 space-y-2">
               <div class="font-medium">
                 Advanced React
@@ -247,14 +289,27 @@
                 <li>Seamlessly test React applications with React Testing Library</li>
                 <li>Integrate commonly used React libraries to streamline your application development</li>
               </ul>
+              <div class="text-xs">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline text-blue-600"
+                >
+                  Verify certificate
+                </a>
+              </div>
             </figcaption>
           </a>
         </figure>
         <figure class="bg-white border rounded-xl overflow-hidden">
           <a href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ" target="_blank"
             rel="noopener noreferrer" class="block">
-            <img src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg" class="w-full"
-              alt="Agentic AI" />
+            <img
+              src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg"
+              class="w-full zoomable cursor-zoom-in"
+              alt="Agentic AI"
+            />
             <figcaption class="p-4 text-sm text-gray-700 space-y-2">
               <div class="font-medium">
                 Agentic AI with LangChain and LangGraph
@@ -266,12 +321,93 @@
                 <li>Apply agent orchestration techniques to build collaborative multi-agent systems</li>
                 <li>Implement agentic RAG systems that route queries and support retrieval-enhanced reasoning</li>
               </ul>
+              <div class="text-xs">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline text-blue-600"
+                >
+                  Verify certificate
+                </a>
+              </div>
             </figcaption>
           </a>
         </figure>
       </div>
     </section>
   </main>
+
+  <div id="image-lightbox" class="image-lightbox" aria-hidden="true">
+    <figure class="text-left max-w-3xl">
+      <img id="lightbox-img" src="" alt="" />
+      <div id="lightbox-caption" class="mt-4 text-sm text-white"></div>
+    </figure>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('image-lightbox')
+    const lightboxImg = document.getElementById('lightbox-img')
+    const lightboxCaption = document.getElementById('lightbox-caption')
+
+    function openLightbox(img) {
+      const figure = img.closest('figure')
+      const caption = figure ? figure.querySelector('figcaption') : null
+      const projectCard = img.closest('.project-card')
+      lightboxImg.src = img.src
+      lightboxImg.alt = img.alt || 'Image preview'
+      lightboxCaption.innerHTML = ''
+      if (caption) {
+        const clone = caption.cloneNode(true)
+        clone.removeAttribute('class')
+        clone.querySelectorAll('[class]').forEach((el) => el.removeAttribute('class'))
+        lightboxCaption.appendChild(clone)
+      } else if (projectCard) {
+        const title = projectCard.querySelector('h3')
+        const paragraphs = projectCard.querySelectorAll('p')
+        if (title) {
+          const titleEl = document.createElement('div')
+          titleEl.textContent = title.textContent
+          lightboxCaption.appendChild(titleEl)
+        }
+        if (paragraphs.length > 0) {
+          const descEl = document.createElement('p')
+          descEl.textContent = paragraphs[0].textContent
+          lightboxCaption.appendChild(descEl)
+        }
+        if (paragraphs.length > 1) {
+          const techEl = document.createElement('p')
+          techEl.textContent = paragraphs[1].textContent
+          lightboxCaption.appendChild(techEl)
+        }
+      } else {
+        lightboxCaption.textContent = img.alt || ''
+      }
+      lightbox.classList.add('is-open')
+      lightbox.setAttribute('aria-hidden', 'false')
+      document.body.style.overflow = 'hidden'
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('is-open')
+      lightbox.setAttribute('aria-hidden', 'true')
+      lightboxImg.src = ''
+      lightboxCaption.textContent = ''
+      document.body.style.overflow = ''
+    }
+
+    document.querySelectorAll('img.zoomable').forEach((img) => {
+      img.addEventListener('click', (event) => {
+        event.preventDefault()
+        openLightbox(img)
+      })
+    })
+
+    lightbox.addEventListener('click', closeLightbox)
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeLightbox()
+    })
+  </script>
 
 </body>
 
