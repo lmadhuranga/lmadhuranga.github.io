@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Madhuranga’s Sketchbook 🖍</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* ================= PAPER BACKGROUND ================= */
+    body {
+      background-color: #fdfcf8;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 24px 24px;
+      font-family: "Comic Sans MS", "Segoe UI", system-ui, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ================= HANDWRITING ================= */
+    .handwriting {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #000;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* ================= MARKER ================= */
+    .marker {
+      position: relative;
+      display: inline-block;
+    }
+    .marker::after {
+      content: "";
+      position: absolute;
+      left: -6px;
+      right: -6px;
+      bottom: 0.2em;
+      height: 0.6em;
+      background: #fde68a;
+      z-index: -1;
+      transform: rotate(-2deg);
+    }
+
+    /* ================= DOODLES ================= */
+    .doodle {
+      position: absolute;
+      font-size: 2.2rem;
+      opacity: 0.35;
+      pointer-events: none;
+      transform-origin: center;
+    }
+
+    /* ================= AI NOTES ================= */
+    .ai-note {
+      background: #fff7ed;
+      border: 3px dashed #000;
+      transform: rotate(-2deg);
+      box-shadow: 4px 4px 0 #000;
+    }
+
+    /* ================= AI THINKING ================= */
+    .ai-think-bubble {
+      background: #ecfeff;
+      border: 3px solid #000;
+      border-radius: 30px;
+      padding: 20px 28px;
+      max-width: 420px;
+      box-shadow: 4px 4px 0 #000;
+      transform: rotate(-1.5deg);
+      position: relative;
+      font-size: 1.1rem;
+      margin: auto;
+    }
+
+    .ai-think-bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      left: 40px;
+      width: 20px;
+      height: 20px;
+      background: #ecfeff;
+      border-left: 3px solid #000;
+      border-bottom: 3px solid #000;
+      transform: rotate(45deg);
+    }
+
+    .ai-thought-text {
+      margin-top: 10px;
+      min-height: 1.6em;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+<!-- ================= RANDOM DOODLES ================= -->
+<div id="doodles"></div>
+
+<!-- ================= HERO ================= -->
+<section class="max-w-5xl mx-auto px-6 py-20 text-center relative">
+
+  <img
+    src="profile-image/maduranga-senadheera.jpg"
+    class="w-40 h-40 mx-auto rounded-full border-8 border-black shadow-lg bg-white"
+    alt="Madhuranga"
+  />
+
+  <h1 class="text-5xl font-extrabold mt-10">
+    📓 <span class="marker handwriting" id="titleText"></span>
+  </h1>
+
+  <p class="mt-6 text-xl max-w-3xl mx-auto">
+    Hi! I’m <strong>Madhuranga</strong> 👋  
+    I build <span class="marker">apps</span>,
+    <span class="marker">systems</span>,
+    and <span class="marker">AI ideas</span>.
+  </p>
+
+</section>
+
+<!-- ================= AI NOTES ================= -->
+<section class="max-w-4xl mx-auto px-6 py-16">
+
+  <div class="ai-note p-6 rounded-xl mb-10">
+    🤖 <strong>AI Note #1</strong><br/>
+    I use <strong>OpenAI</strong> & <strong>Gemini</strong> as the brain.
+    LangChain connects tools, memory & APIs.
+  </div>
+
+  <div class="ai-note p-6 rounded-xl ml-10 rotate-1 mb-10">
+    🧠 <strong>AI Note #2</strong><br/>
+    LangGraph lets AI decide what to do next —
+    like a thinking flowchart.
+  </div>
+
+  <div class="ai-note p-6 rounded-xl -rotate-2">
+    ✨ <strong>AI Note #3</strong><br/>
+    I build agents that read, reason, retry,
+    and respond like helpful assistants.
+  </div>
+
+</section>
+
+<!-- ================= AI THINKING ================= -->
+<section class="max-w-4xl mx-auto px-6 py-16">
+
+  <div class="ai-think-bubble">
+    🤖 <strong>AI is thinking…</strong>
+    <div id="ai-thought" class="ai-thought-text"></div>
+  </div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+
+  <h2 class="text-3xl font-bold mb-12">
+    🏗 <span class="marker">Things I Built</span>
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <div>
+      <img src="projects/kitcrew/kitcrew.png"
+           class="rounded-xl border-4 border-black shadow mb-3"/>
+      <h3 class="text-xl font-bold">⚽ KitCrew</h3>
+      <p>Multi-tenant e-commerce platform.</p>
+    </div>
+
+    <div>
+      <img src="projects/read-buddy/read-buddy.png"
+           class="rounded-xl border-4 border-black shadow mb-3"/>
+      <h3 class="text-xl font-bold">📚 Read Buddy</h3>
+      <p>OCR + audio reading experience.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-20 text-gray-600">
+  ✨ Still sketching, still building ✨
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+  /* ========== HANDWRITING TITLE ========== */
+  const titleText = "My Sketchbook";
+  const titleEl = document.getElementById("titleText");
+  let t = 0;
+
+  function typeTitle() {
+    if (t < titleText.length) {
+      titleEl.textContent += titleText.charAt(t);
+      t++;
+      setTimeout(typeTitle, 120);
+    }
+  }
+  typeTitle();
+
+  /* ========== RANDOM DOODLES ========== */
+  const doodles = ["⭐", "➡️", "☁️", "❤️", "✨", "🌀", "⚡"];
+  const doodleContainer = document.getElementById("doodles");
+
+  for (let i = 0; i < 12; i++) {
+    const d = document.createElement("div");
+    d.className = "doodle";
+    d.textContent = doodles[Math.floor(Math.random() * doodles.length)];
+    d.style.top = Math.random() * window.innerHeight + "px";
+    d.style.left = Math.random() * window.innerWidth + "px";
+    d.style.transform = `rotate(${Math.random() * 360}deg)`;
+    doodleContainer.appendChild(d);
+  }
+
+  /* ========== AI THINKING ANIMATION ========== */
+  const thoughts = [
+    "Reading the question",
+    "Understanding intent",
+    "Searching memory",
+    "Connecting ideas",
+    "Choosing best response",
+    "Ready ✨"
+  ];
+
+  const thoughtEl = document.getElementById("ai-thought");
+  let index = 0;
+  let dots = 0;
+
+  function animateThinking() {
+    dots = (dots + 1) % 4;
+    thoughtEl.textContent = thoughts[index] + ".".repeat(dots);
+
+    if (dots === 0) {
+      index = (index + 1) % thoughts.length;
+    }
+  }
+
+  setInterval(animateThinking, 800);
+</script>
+
+</body>
+</html>

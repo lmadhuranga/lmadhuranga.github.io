@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Madhuranga’s Sketchbook 🖍</title>
+
+  <meta name="description"
+        content="A hand-drawn sketchbook style portfolio of Madhuranga Senadheera – Senior Full Stack & AI Engineer." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Paper texture */
+    body {
+      background-color: #fdfcf8;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 24px 24px;
+      font-family: "Comic Sans MS", "Segoe UI", system-ui, sans-serif;
+    }
+
+    /* Marker underline */
+    .marker {
+      position: relative;
+      display: inline-block;
+    }
+    .marker::after {
+      content: "";
+      position: absolute;
+      left: -4px;
+      right: -4px;
+      bottom: 0.15em;
+      height: 0.6em;
+      background: #fde68a;
+      z-index: -1;
+      transform: rotate(-2deg);
+    }
+
+    /* Doodle arrow */
+    .arrow {
+      font-size: 2rem;
+      transform: rotate(-15deg);
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+<!-- ================= COVER PAGE ================= -->
+<section class="max-w-5xl mx-auto px-6 py-20 text-center">
+
+  <img
+    src="profile-image/maduranga-senadheera.jpg"
+    alt="Madhuranga"
+    class="w-40 h-40 mx-auto rounded-full border-8 border-black shadow-lg bg-white"
+  />
+
+  <h1 class="text-5xl font-extrabold mt-10">
+    📓 <span class="marker">My Sketchbook</span>
+  </h1>
+
+  <p class="mt-6 text-xl max-w-3xl mx-auto">
+    Hi! I’m <strong>Madhuranga</strong> 👋  
+    I design, build, and experiment with
+    <span class="marker">web apps</span>,
+    <span class="marker">systems</span>,
+    and <span class="marker">AI ideas</span>.
+  </p>
+
+  <p class="mt-4 text-lg">
+    ✏️ Senior Full Stack Developer · 🤖 AI Explorer
+  </p>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="max-w-4xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold mb-6">
+    🖍 <span class="marker">About Me</span>
+  </h2>
+
+  <p class="text-lg leading-relaxed">
+    I’ve been drawing ideas in my head for more than
+    <strong>10 years</strong> — and turning them into
+    real products people can use.
+    <br/><br/>
+    From government platforms to e-commerce systems
+    and AI-powered tools, I love building things that feel
+    <em>simple on the outside</em> and
+    <em>smart on the inside</em>.
+  </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="max-w-5xl mx-auto px-6 py-16">
+
+  <h2 class="text-3xl font-bold mb-10">
+    🧠 <span class="marker">My Tool Pouch</span>
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-10 text-lg">
+
+    <div class="border-4 border-dashed border-black p-6 bg-white">
+      <h3 class="font-bold mb-2">🎨 Frontend</h3>
+      <p>React · Next.js · TypeScript · HTML · CSS</p>
+    </div>
+
+    <div class="border-4 border-dashed border-black p-6 bg-white">
+      <h3 class="font-bold mb-2">⚙️ Backend</h3>
+      <p>Node.js · NestJS · APIs · Microservices</p>
+    </div>
+
+    <div class="border-4 border-dashed border-black p-6 bg-white">
+      <h3 class="font-bold mb-2">🤖 AI & Thinking</h3>
+      <p>OpenAI · Gemini · LangChain · LangGraph</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+
+  <h2 class="text-3xl font-bold mb-12">
+    🏗 <span class="marker">Things I Built</span>
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <div>
+      <div class="arrow">➡️</div>
+      <img src="projects/kitcrew/kitcrew.png"
+           class="rounded-xl border-4 border-black shadow mb-3"/>
+      <h3 class="text-xl font-bold">⚽ KitCrew</h3>
+      <p>
+        A multi-language, multi-currency soccer jersey shop.
+      </p>
+    </div>
+
+    <div>
+      <div class="arrow">➡️</div>
+      <img src="projects/tamm/tamm-home-page.png"
+           class="rounded-xl border-4 border-black shadow mb-3"/>
+      <h3 class="text-xl font-bold">🏛 TAMM</h3>
+      <p>
+        Government platform helping people access services.
+      </p>
+    </div>
+
+    <div>
+      <div class="arrow">➡️</div>
+      <img src="projects/read-buddy/read-buddy.png"
+           class="rounded-xl border-4 border-black shadow mb-3"/>
+      <h3 class="text-xl font-bold">📚 Read Buddy</h3>
+      <p>
+        Reads text from images and speaks it aloud.
+      </p>
+    </div>
+
+    <div>
+      <div class="arrow">➡️</div>
+      <img src="projects/treema/treema-unified-operator-desk.png"
+           class="rounded-xl border-4 border-black shadow mb-3"/>
+      <h3 class="text-xl font-bold">🤖 Treema</h3>
+      <p>
+        AI assistant that suggests smart replies.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-20 text-gray-600">
+  <p class="text-lg">
+    ✨ Still sketching, still building ✨
+  </p>
+  <p class="mt-2 text-sm">
+    © 2026 Madhuranga Senadheera
+  </p>
+</footer>
+
+</body>
+</html>

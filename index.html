@@ -9,21 +9,18 @@
   <meta name="description"
         content="Senior Full Stack Developer with 10+ years of experience in React, Next.js, Node.js, and enterprise platforms." />
 
+  <!-- Tailwind config -->
+  <script>
+    window.tailwind = {
+      config: {
+        darkMode: 'class'
+      }
+    }
+  </script>
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Theme init -->
-  <script>
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 dark:bg-slate-950 dark:text-slate-100">
@@ -167,21 +164,22 @@
 
 <!-- ================= DARK MODE SCRIPT ================= -->
 <script>
+  const root = document.documentElement
   const toggle = document.getElementById('theme-toggle')
 
-  function updateIcon() {
-    toggle.textContent =
-      document.documentElement.classList.contains('dark') ? '☀️' : '🌙'
+  function setTheme(isDark) {
+    root.classList.toggle('dark', isDark)
+    localStorage.theme = isDark ? 'dark' : 'light'
+    toggle.textContent = isDark ? '☀️' : '🌙'
   }
 
-  toggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark')
-    localStorage.theme =
-      document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-    updateIcon()
-  })
+  const storedTheme = localStorage.getItem('theme')
+  const initialDark = storedTheme === 'dark'
+  setTheme(initialDark)
 
-  updateIcon()
+  toggle.addEventListener('click', () => {
+    setTheme(!root.classList.contains('dark'))
+  })
 </script>
 
 </body>
