@@ -18,7 +18,7 @@
   <header class="bg-white border-b">
     <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center gap-8">
       <img src="profile-image/maduranga-senadheera.jpg" alt="Maduranga Senadheera" class="w-48 h-48 sm:w-36 sm:h-36 md:w-60 md:h-60
-         rounded-full object-cover border shadow-md" /> 
+         rounded-full object-cover border shadow-md" />
       <div>
         <h1 class="text-3xl font-bold">Maduranga Senadheera</h1>
         <p class="text-lg text-blue-600 mt-1">
@@ -127,31 +127,99 @@
 
       </div>
     </section>
-
+    
     <!-- PROJECTS -->
     <section>
       <h2 class="text-2xl font-bold mb-8">Projects</h2>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+        <!-- KitCrew -->
         <div class="bg-white border rounded-xl overflow-hidden">
           <img src="projects/kitcrew/kitcrew.png" alt="KitCrew" />
-          <div class="p-4">
+          <div class="p-4 space-y-2">
             <h3 class="font-semibold">KitCrew – E-Commerce Platform</h3>
-            <p class="text-sm text-gray-600 mt-2">
-              Multi-tenant soccer jersey platform with SSR, SEO,
-              and internationalization support.
+            <p class="text-sm text-gray-600">
+              Multi-tenant soccer jersey e-commerce platform with
+              SSR, SEO optimization, multi-language and multi-currency support.
+            </p>
+            <p class="text-xs text-gray-500">
+              Tech: Next.js · React · Node.js · PostgreSQL
             </p>
           </div>
         </div>
 
+        <!-- TAMM -->
+        <div class="bg-white border rounded-xl overflow-hidden">
+          <img src="projects/tamm/tamm-home-page.png" alt="TAMM" />
+          <div class="p-4 space-y-2">
+            <h3 class="font-semibold">TAMM – Government Services Platform</h3>
+            <p class="text-sm text-gray-600">
+              Abu Dhabi Government digital platform integrating
+              multiple services into a unified citizen experience.
+            </p>
+            <p class="text-xs text-gray-500">
+              Tech: React · Node.js · Government APIs
+            </p>
+          </div>
+        </div>
+
+        <!-- Treema -->
+        <div class="bg-white border rounded-xl overflow-hidden">
+          <img src="projects/treema/treema-unified-operator-desk.png" alt="Treema" />
+          <div class="p-4 space-y-2">
+            <h3 class="font-semibold">Treema – AI Operator Desk</h3>
+            <p class="text-sm text-gray-600">
+              AI-powered unified inbox that analyzes messages,
+              detects intent and sentiment, and suggests responses using LLMs.
+            </p>
+            <p class="text-xs text-gray-500">
+              Tech: React · Node.js · OpenAI · Gemini · LangChain · LangGraph
+            </p>
+          </div>
+        </div>
+
+        <!-- Read Buddy -->
         <div class="bg-white border rounded-xl overflow-hidden">
           <img src="projects/read-buddy/read-buddy.png" alt="Read Buddy" />
-          <div class="p-4">
+          <div class="p-4 space-y-2">
             <h3 class="font-semibold">Read Buddy – Read-to-Me App</h3>
-            <p class="text-sm text-gray-600 mt-2">
-              AI-powered OCR and audio narration application
-              with word-level highlighting.
+            <p class="text-sm text-gray-600">
+              OCR-based application that extracts text from images,
+              generates audio narration, and highlights words interactively.
+            </p>
+            <p class="text-xs text-gray-500">
+              Tech: React · OCR · AI · Text-to-Speech
+            </p>
+          </div>
+        </div>
+
+        <!-- Voizzit -->
+        <div class="bg-white border rounded-xl overflow-hidden">
+          <img src="projects/voizzit/voizzit-home-page.png" alt="Voizzit" />
+          <div class="p-4 space-y-2">
+            <h3 class="font-semibold">Voizzit – Commerce Platform</h3>
+            <p class="text-sm text-gray-600">
+              Large-scale commerce and product platform
+              focusing on performance, SEO, and reusable UI architecture.
+            </p>
+            <p class="text-xs text-gray-500">
+              Tech: Next.js · React · Node.js
+            </p>
+          </div>
+        </div>
+
+        <!-- Todo App -->
+        <div class="bg-white border rounded-xl overflow-hidden">
+          <img src="projects/todo-application.png" alt="Todo App" />
+          <div class="p-4 space-y-2">
+            <h3 class="font-semibold">Todo Application</h3>
+            <p class="text-sm text-gray-600">
+              Simple task management app demonstrating
+              clean state management and component structure.
+            </p>
+            <p class="text-xs text-gray-500">
+              Tech: React · TypeScript
             </p>
           </div>
         </div>
@@ -165,23 +233,16 @@
 
       <div class="grid md:grid-cols-2 gap-6">
         <figure class="bg-white border rounded-xl overflow-hidden">
-          <a
-            href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block"
-          >
-            <img
-              src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg"
-              class="w-full"
-              alt="Advanced React"
-            />
+          <a href="https://www.coursera.org/account/accomplishments/verify/Y2CV36K2R4JJ" target="_blank"
+            rel="noopener noreferrer" class="block">
+            <img src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg" class="w-full" alt="Advanced React" />
             <figcaption class="p-4 text-sm text-gray-700 space-y-2">
               <div class="font-medium">
                 Advanced React
               </div>
               <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
-                <li>Create robust and reusable components with advanced techniques and learn different patterns to reuse common behavior</li>
+                <li>Create robust and reusable components with advanced techniques and learn different patterns to reuse
+                  common behavior</li>
                 <li>Interact with a remote server and fetch and post data via an API</li>
                 <li>Seamlessly test React applications with React Testing Library</li>
                 <li>Integrate commonly used React libraries to streamline your application development</li>
@@ -190,23 +251,17 @@
           </a>
         </figure>
         <figure class="bg-white border rounded-xl overflow-hidden">
-          <a
-            href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block"
-          >
-            <img
-              src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg"
-              class="w-full"
-              alt="Agentic AI"
-            />
+          <a href="https://www.coursera.org/account/accomplishments/verify/DHGSEQB8PPMZ" target="_blank"
+            rel="noopener noreferrer" class="block">
+            <img src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg" class="w-full"
+              alt="Agentic AI" />
             <figcaption class="p-4 text-sm text-gray-700 space-y-2">
               <div class="font-medium">
                 Agentic AI with LangChain and LangGraph
               </div>
               <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
-                <li>Build agentic AI systems using LangChain and LangGraph to support memory, iteration, and conditional logic</li>
+                <li>Build agentic AI systems using LangChain and LangGraph to support memory, iteration, and conditional
+                  logic</li>
                 <li>Design and implement self-improving agents using Reflection, Reflexion, and ReAct architectures</li>
                 <li>Apply agent orchestration techniques to build collaborative multi-agent systems</li>
                 <li>Implement agentic RAG systems that route queries and support retrieval-enhanced reasoning</li>
