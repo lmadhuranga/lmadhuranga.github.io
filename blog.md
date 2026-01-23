@@ -1,10 +1,7 @@
-# 👋 Hi, I’m Maduranga Senadheera
-
-**Senior Full-Stack Developer | React • Next.js • Node.js • NestJS • MongoDB**
-
 Welcome to my technical blog — a place where I share **real-world engineering knowledge**, **production lessons**, and **interview-ready insights** from over **10 years in software development**.
 
 I write about building scalable web applications, modern JavaScript architecture, and what actually matters when shipping software to production.
+
 
 ---
 
