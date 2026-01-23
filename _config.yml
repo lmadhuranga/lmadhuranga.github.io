@@ -1,1 +1,8 @@
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+
+theme: minima
+
+# theme: jekyll-theme-cayman
+# theme: jekyll-theme-slate
+
+# theme: jekyll-theme-time-machine

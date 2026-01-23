@@ -4,7 +4,7 @@
 
 <p align="center">
   <img
-    src="profile-image/maduranga-senadheera.jpg"
+    src="assets/images/profile.jpg"
     alt="Maduranga Senadheera"
     width="180"
     style="
@@ -57,7 +57,7 @@ I work across frontend, backend, and AI-powered systems, delivering reliable and
 ### KitCrew – E-Commerce Platform
 
 <p>
-  <img src="projects/kitcrew/kitcrew.png" width="100%" alt="KitCrew" />
+  <img src="assets/images/projects/kitcrew.png" width="100%" alt="KitCrew" />
 </p>
 
 Multi-tenant soccer jersey e-commerce platform with SSR, SEO optimization, and internationalization.
@@ -68,7 +68,7 @@ Multi-tenant soccer jersey e-commerce platform with SSR, SEO optimization, and i
 ### TAMM – Government Services Platform
 
 <p>
-  <img src="projects/tamm/tamm-home-page.png" width="100%" alt="TAMM" />
+  <img src="assets/images/projects/tamm-home-page.png" width="100%" alt="TAMM" />
 </p>
 
 Abu Dhabi Government digital platform integrating multiple services into a unified citizen experience.
@@ -79,7 +79,7 @@ Abu Dhabi Government digital platform integrating multiple services into a unifi
 ### Treema – AI Operator Desk
 
 <p>
-  <img src="projects/treema/treema-unified-operator-desk.png" width="100%" alt="Treema" />
+  <img src="assets/images/projects/treema-unified-operator-desk.png" width="100%" alt="Treema" />
 </p>
 
 AI-powered unified inbox that analyzes messages, detects intent and sentiment, and suggests responses using LLMs.
@@ -90,7 +90,7 @@ AI-powered unified inbox that analyzes messages, detects intent and sentiment, a
 ### Read Buddy – Read-to-Me App
 
 <p>
-  <img src="projects/read-buddy/read-buddy.png" width="100%" alt="Read Buddy" />
+  <img src="assets/images/projects/read-buddy.png" width="100%" alt="Read Buddy" />
 </p>
 
 OCR-based application that extracts text from images, generates audio narration, and highlights words interactively.
@@ -101,7 +101,7 @@ OCR-based application that extracts text from images, generates audio narration,
 ### Voizzit – Commerce Platform
 
 <p>
-  <img src="projects/voizzit/voizzit-home-page.png" width="100%" alt="Voizzit" />
+  <img src="assets/images/projects/voizzit-home-page.png" width="100%" alt="Voizzit" />
 </p>
 
 Large-scale commerce platform focusing on performance, SEO, and reusable UI architecture.
@@ -112,7 +112,7 @@ Large-scale commerce platform focusing on performance, SEO, and reusable UI arch
 ### Todo Application
 
 <p>
-  <img src="projects/todo-application.png" width="100%" alt="Todo App" />
+  <img src="assets/images/projects/todo-application.png" width="100%" alt="Todo App" />
 </p>
 
 Simple task management application demonstrating clean state management and component structure.
