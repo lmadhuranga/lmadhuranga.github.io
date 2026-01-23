@@ -1,59 +1,111 @@
-My experiments will be published here.
+# 👋 Hi, I’m Maduranga Senadheera
 
-# Experiments Lab
+**Senior Full-Stack Developer | React • Next.js • Node.js • NestJS • MongoDB**
 
-This page is a **scratchpad** for tests: *formatting*, `code`, and links.
+Welcome to my technical blog — a place where I share **real-world engineering knowledge**, **production lessons**, and **interview-ready insights** from over **10 years in software development**.
 
-## Sections and Emphasis
+I write about building scalable web applications, modern JavaScript architecture, and what actually matters when shipping software to production.
 
-Mixing **bold**, *italic*, ***both***, and `inline code` in one line.
+---
 
-### Short List
+## ✍️ What This Blog Is About
 
-- First idea
-- Second idea
-- Third idea with a [link](https://example.com)
+This blog focuses on **practical, experience-driven content**, not textbook theory.
 
-### Ordered List
+You’ll find posts about:
 
-1. Step one
-2. Step two
-3. Step three
+* ⚛️ **React & Next.js**
 
-## Quote Styles
+  * Performance optimization
+  * SSR, SSG, ISR explained with real use cases
+  * Component architecture patterns
 
-> A simple quote for testing blockquote rendering.
+* 🧠 **Backend with Node.js & NestJS**
 
-> [!NOTE]
-> This is a system-style note quote for emphasis.
+  * Clean architecture
+  * Dependency Injection
+  * API design & scalability
 
-> [!TIP]
-> This is a tip quote to verify styling.
+* 🗄️ **Databases (MongoDB & SQL)**
 
-> [!WARNING]
-> This is a warning quote to test attention styling.
+  * Schema design
+  * Performance tuning
+  * Real production trade-offs
 
-## Code Samples
+* 🎯 **Interview Preparation**
 
-Inline example: `npm run build`
+  * Senior-level questions
+  * System design thinking
+  * How to explain your experience clearly
 
-```bash
-echo "Hello, experiments"
+* 🚀 **Career & Engineering Growth**
+
+  * Lessons from enterprise projects
+  * Mistakes I’ve made (and fixed)
+  * How to think like a senior engineer
+
+---
+
+## 🔥 Why I’m Writing This
+
+After years of interviews, production bugs, late-night deployments, and mentoring developers, I realized one thing:
+
+> **Most learning resources don’t reflect real production challenges.**
+
+This blog is my attempt to:
+
+* Share **what actually works**
+* Explain **why decisions matter**
+* Help developers **level up faster**
+
+No fluff. No copy-paste tutorials. Just **clear thinking and practical engineering**.
+
+---
+
+## 🧩 Recent & Featured Posts
+
+> *(This section grows as you write more)*
+
+* 📌 **How to Prepare for a React, Next.js, Node.js & NestJS Interview**
+* 📌 **SSR vs SSG vs ISR — When to Use What in Next.js**
+* 📌 **How Node.js Handles Concurrency (Explained Simply)**
+* 📌 **Designing MongoDB Schemas for Scale**
+
+👉 *More posts coming soon…*
+
+---
+
+## 🛠️ Tech Stack I Work With
+
+```txt
+Frontend   : React.js, Next.js, TypeScript
+Backend    : Node.js, NestJS
+Databases  : MongoDB, PostgreSQL, MySQL
+DevOps     : CI/CD, Docker (basic), Git
+Practices  : Clean Architecture, SOLID, Agile
 ```
 
-```js
-const idea = "prototype";
-console.log(idea);
-```
+---
 
-## Image Sample
+## 📫 Let’s Connect
 
-![Sample placeholder](https://via.placeholder.com/800x400.png?text=Experiment+Preview)
+* 💼 **LinkedIn**: [https://www.linkedin.com/in/your-link](https://www.linkedin.com/in/your-link)
+* 🧑‍💻 **GitHub**: [https://github.com/your-username](https://github.com/your-username)
+* ✉️ **Email**: [your@email.com](mailto:your@email.com)
 
-## Table Sample
+If my writing helps you — or if you want to discuss architecture, interviews, or career growth — feel free to reach out.
 
-| Item | Status | Notes |
-| --- | --- | --- |
-| Alpha | In progress | Basic format test |
-| Beta | Planned | Add assets later |
-| Gamma | Done | Review styles |
+---
+
+## ⭐ Final Note
+
+If you find value here:
+
+* Star ⭐ the repo
+* Share posts with others
+* Use the ideas in real projects
+
+> **Good engineers write code.
+> Great engineers explain decisions.**
+
+Thanks for stopping by — happy coding 👨‍💻🚀
