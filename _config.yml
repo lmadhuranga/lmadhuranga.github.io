@@ -7,7 +7,6 @@ minima:
   show_author: false
 
 exclude:
-  - index.html
   - assets/
   - certificates/
   - versions/
