@@ -5,7 +5,8 @@ date: 2026-01-24
 ---
 ```js
 // Author: Maduranga Senadheera
-// Context: Why I’m Documenting My Journey Toward AI Engineering
+// Context: Why I’m Documenting My Journey 
+//          Toward AI Engineering
 // Status: Curious
 
 let yearsOfExperience = 10+;
@@ -17,7 +18,7 @@ function startJourney() {
   console.log("Building production systems...");
   
   if (curiosityLevel === "increasing") {
-    console.log("Asking uncomfortable questions...");
+    console.log("Asking uncomfortable questions");
     learn("AI fundamentals");
   }
 }
