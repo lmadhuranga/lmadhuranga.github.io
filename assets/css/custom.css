@@ -36,3 +36,19 @@
    color: #93c5fd;
    text-decoration: underline;
  }
+
+ .justified-text {
+   text-align: justify;
+   text-justify: inter-word;
+   hyphens: auto;
+   word-spacing: -0.02em;
+ }
+
+ @media (max-width: 640px) {
+   .justified-text {
+     text-align: left;
+     text-justify: auto;
+     hyphens: none;
+     word-spacing: normal;
+   }
+ }
