@@ -1,3 +1,9 @@
 .DS_Store
 *.txt
 file_structure.txt
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+.bundle/
+vendor/

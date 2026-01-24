@@ -26,7 +26,3 @@ and lessons from real production systems.
 * 💼 LinkedIn: [https://linkedin.com/in/lmadhuranga](https://linkedin.com/in/lmadhuranga)
 * 🧑‍💻 GitHub: [https://github.com/lmadhuranga](https://github.com/lmadhuranga)
 * ✉️ Email: [lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com)
-
----
-
-Thanks for stopping by — happy coding 👨‍💻 🚀
