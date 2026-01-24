@@ -12,6 +12,10 @@ and the mindset shifts that come with learning something new after years in prod
 
 <br />
 
+## 📌 Notes & Posts
+
+- [Why I’m Documenting My Journey Toward AI Engineering](/2026/01/24/why-im-documenting-my-journey-toward-ai-engineering.html)
+
 ## 🚀 Career & Engineering Growth
 
 This section is about thinking clearly, learning continuously,
@@ -25,10 +29,3 @@ and adapting as an engineer — not chasing trends.
 ---
 
 <br />
-
-## 📌 Notes & Posts
-
-Nothing published yet — this space will slowly fill up
-with notes, experiments, and reflections from real learning.
-
-No rush. No hype. Just progress.
