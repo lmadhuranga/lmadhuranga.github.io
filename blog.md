@@ -45,9 +45,9 @@ permalink: /blog/
   <section class="readme-section">
     <h2>What You'll Find Here</h2>
     <ul class="readme-list">
+      <li>Early AI experiments from a builder’s perspective</li>
       <li>Career reflections from a senior engineer still learning</li>
       <li>Notes on systems thinking, architecture, and trade-offs</li>
-      <li>Early AI experiments from a builder’s perspective</li>
     </ul>
   </section>
 
