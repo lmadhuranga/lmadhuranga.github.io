@@ -2,24 +2,20 @@
 layout: home
 permalink: /blog/
 ---
-
 Thoughts on software engineering, React, Next.js, Node.js, system design,
 and lessons from real production systems.
 
 * 🚀 **Career & Engineering Growth**
 
-  * Lessons from enterprise projects
-  * Mistakes I’ve made (and fixed)
-  * How to think like a senior engineer
+  * How to get motivate to write code (Loading...)
+  * Mistakes I’ve made (and fixed) (Loading...)
+  * How to think like a senior engineer (Loading...)
 
 ---
 
 ## 📌  Featured Posts
 
-- How to Prepare for React, Next.js & Node.js Interviews  
-- SSR vs SSG vs ISR in Next.js  
-- How Node.js Handles Concurrency  
-- MongoDB Schema Design for Scale  
+- None. 
 
 *(More coming soon…)*
 
@@ -32,8 +28,5 @@ and lessons from real production systems.
 * ✉️ Email: [lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com)
 
 ---
-
-> **Good engineers write code.
-> Great engineers explain decisions.**
 
 Thanks for stopping by — happy coding 👨‍💻 🚀
