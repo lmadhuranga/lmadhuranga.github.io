@@ -1,7 +1,8 @@
 theme: minima
 title: Maduranga's Thoughts
 description: Senior Full-Stack Developer | React • Next.js • Node.js
- 
+author: Maduranga Senadheera
+
 minima:
   show_author: false
 
