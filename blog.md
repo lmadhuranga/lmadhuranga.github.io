@@ -24,7 +24,7 @@ and lessons from real production systems.
 ## 📫 Connect With Me
 
 * 💼 LinkedIn: [https://linkedin.com/in/lmadhuranga](https://linkedin.com/in/lmadhuranga)
-* 🧑‍💻 GitHub: [https://github.com/your-username](https://github.com/lmadhuranga)
+* 🧑‍💻 GitHub: [https://github.com/lmadhuranga](https://github.com/lmadhuranga)
 * ✉️ Email: [lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com)
 
 ---
