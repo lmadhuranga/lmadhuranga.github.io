@@ -3,47 +3,72 @@ layout: home
 permalink: /blog/
 ---
 
-<div class="editor-home" aria-label="Blog home styled as a code editor">
-  <div class="editor-window">
-    <div class="editor-topbar">
-      <div class="editor-dots">
-        <span class="editor-dot editor-dot-red"></span>
-        <span class="editor-dot editor-dot-yellow"></span>
-        <span class="editor-dot editor-dot-green"></span>
-      </div>
-      <span class="editor-title">blog.md</span>
-      <span class="editor-status">Connected · main</span>
-    </div>
-    <div class="editor-tabs">
-      <span class="editor-tab editor-tab-active">blog.md</span>
-      <span class="editor-tab">notes.js</span>
-      <span class="editor-tab">roadmap.md</span>
-    </div>
-    <div class="editor-body">
-      <ol class="editor-lines">
-        <li><span class="tok-comment">// Maduranga's Thoughts</span></li>
-        <li><span class="tok-comment">// Notes from a full-stack developer moving toward AI engineering.</span></li>
-        <li></li>
-        <li><span class="tok-key">const</span> <span class="tok-var">featured</span> <span class="tok-op">=</span> <span class="tok-punc">{</span></li>
-        <li>  <span class="tok-prop">title</span><span class="tok-punc">:</span> <span class="tok-string">"Why I'm Documenting My Journey Toward AI Engineering"</span><span class="tok-punc">,</span></li>
-        <li>  <span class="tok-prop">date</span><span class="tok-punc">:</span> <span class="tok-string">"Jan 24, 2026"</span><span class="tok-punc">,</span></li>
-        <li>  <span class="tok-prop">url</span><span class="tok-punc">:</span> <a class="tok-link" href="/2026/01/24/why-im-documenting-my-journey-toward-ai-engineering.html">"/2026/01/24/why-im-documenting-my-journey-toward-ai-engineering.html"</a></li>
-        <li><span class="tok-punc">}</span><span class="tok-punc">;</span></li>
-        <li></li>
-        <li><span class="tok-key">const</span> <span class="tok-var">tracks</span> <span class="tok-op">=</span> <span class="tok-punc">[</span></li>
-        <li>  <span class="tok-string">"Career and Growth"</span><span class="tok-punc">,</span></li>
-        <li>  <span class="tok-string">"Systems and Architecture"</span><span class="tok-punc">,</span></li>
-        <li>  <span class="tok-string">"AI Builder Notes"</span></li>
-        <li><span class="tok-punc">]</span><span class="tok-punc">;</span></li>
-        <li></li>
-        <li><span class="tok-comment">// Notes and posts</span></li>
-        <li><span class="tok-key">const</span> <span class="tok-var">posts</span> <span class="tok-op">=</span> <span class="tok-punc">[</span></li>
-        <li>  <a class="tok-link" href="/2026/01/24/why-im-documenting-my-journey-toward-ai-engineering.html">"Read: Why I'm Documenting My Journey Toward AI Engineering"</a></li>
-        <li><span class="tok-punc">]</span><span class="tok-punc">;</span></li>
-        <li></li>
-        <li><span class="tok-comment">// Suggest a topic</span></li>
-        <li><span class="tok-key">const</span> <span class="tok-var">contact</span> <span class="tok-op">=</span> <a class="tok-link" href="mailto:lilan.maduranga@gmail.com">"mailto:lilan.maduranga@gmail.com"</a><span class="tok-punc">;</span></li>
-      </ol>
-    </div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("blog-home-page");
+  });
+</script>
+
+<div class="readme-home" aria-label="Blog home styled like a README">
+  <div class="readme-heading">
+    <h1>Maduranga's Blog</h1>
+    <span class="readme-badge">README</span>
   </div>
+
+  <p class="readme-lede">
+    A learning diary from a full-stack developer on a journey toward AI engineering.
+    Short notes, experiments, and reflections — written to think clearly, not to teach.
+  </p>
+
+  <div class="readme-actions">
+    <a class="readme-secondary" href="/2026/01/24/why-im-documenting-my-journey-toward-ai-engineering.html">
+      Read the first note
+    </a>
+    <a class="readme-secondary" href="mailto:lilan.maduranga@gmail.com">
+      Share a thought
+    </a>
+  </div> 
+
+  <hr class="readme-divider" />
+
+  <section class="readme-section">
+    <h2>Why This Exists</h2>
+    <p>
+      After years of building predictable systems, I started learning something less predictable.
+      This space is where I write things down — the confusion, the small wins, and the lessons
+      that only appear after building and breaking things.
+    </p>
+  </section>
+
+  <hr class="readme-divider" />
+
+  <section class="readme-section">
+    <h2>What You'll Find Here</h2>
+    <ul class="readme-list">
+      <li>Career reflections from a senior engineer still learning</li>
+      <li>Notes on systems thinking, architecture, and trade-offs</li>
+      <li>Early AI experiments from a builder’s perspective</li>
+    </ul>
+  </section>
+
+  <hr class="readme-divider" />
+
+  <section class="readme-section">
+    <h2>Latest Notes</h2>
+    <div class="readme-post">
+      <a href="/2026/01/24/why-im-documenting-my-journey-toward-ai-engineering.html">
+        Why I'm Documenting My Journey Toward AI Engineering
+      </a>
+      <span>Jan 24, 2026</span>
+    </div>
+  </section>
+
+  <hr class="readme-divider" />
+
+  <section class="readme-section">
+    <h2>Status</h2>
+    <p>
+      Still learning. Still writing. No hype. No shortcuts.
+    </p>
+  </section>
 </div>

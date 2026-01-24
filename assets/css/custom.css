@@ -123,7 +123,7 @@
 .site-header,
 .page-content,
 .site-footer {
-  background: #0f1115 !important;
+  background: #212121 !important;
   color: #e6e6e6 !important;
 }
 
@@ -199,7 +199,7 @@
 }
 
 .page-content hr {
-  border-color: #1f2937 !important;
+  border-color: #5a5a5a !important;
 }
 
 .page-content code {
@@ -211,8 +211,7 @@
   fill: currentColor !important;
 }
 
-/* Blog home as code editor */
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+/* Blog home as README */
 
 .home .post-list-heading,
 .home .post-list,
@@ -220,168 +219,167 @@
   display: none !important;
 }
 
-.editor-home {
-  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+.home .site-header {
+  display: none !important;
+}
+
+.blog-home-page .site-header {
+  display: none !important;
+}
+
+.page-content .readme-home {
+  margin-top: 0;
+}
+
+.home .page-content {
+  background: #212121 !important;
+  color: #e6e6e6 !important;
+}
+
+.readme-home {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
   padding: 2.5rem 0 4rem;
+  background: #212121;
 }
 
-.editor-window {
-  background: #0d1117;
-  border: 1px solid #1f2937;
-  border-radius: 18px;
-  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.45);
-  overflow: hidden;
-}
-
-.editor-topbar {
+.readme-heading {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 0.85rem 1.2rem;
-  background: #111827;
-  border-bottom: 1px solid #1f2937;
-  color: #9ca3af;
-  font-size: 0.85rem;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.editor-dots {
-  display: flex;
-  gap: 8px;
+.readme-heading h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
 }
 
-.editor-dot {
-  width: 10px;
-  height: 10px;
+.readme-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
   border-radius: 999px;
+  background: #1f1f1f;
+  color: #a3a3a3;
+  border: 1px solid #333333;
 }
 
-.editor-dot-red {
-  background: #f87171;
+.readme-lede {
+  margin: 1rem 0 0;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #c7c7c7;
 }
 
-.editor-dot-yellow {
-  background: #fbbf24;
+.readme-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1.6rem;
 }
 
-.editor-dot-green {
-  background: #34d399;
-}
-
-.editor-title {
-  color: #e5e7eb;
+.readme-primary {
+  background: #3b82f6;
+  color: #0b0b0b !important;
+  padding: 0.65rem 1.3rem;
+  border-radius: 10px;
+  text-decoration: none !important;
   font-weight: 600;
 }
 
-.editor-status {
-  margin-left: auto;
-  color: #6b7280;
+.readme-secondary {
+  color: #93c5fd !important;
+  text-decoration: none;
+  border: 1px solid #3a3a3a;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
 }
 
-.editor-tabs {
+.readme-divider {
+  border: none;
+  border-top: 2px solid #5a5a5a;
+  margin: 2.4rem 0;
+}
+
+.readme-section {
+  margin-top: 0;
+}
+
+.readme-section h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.readme-section ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #c7c7c7;
+}
+
+.readme-quote {
+  margin: 1.2rem 0;
+  padding: 0.3rem 0 0.3rem 1.2rem;
+  border-left: 4px solid #3f3f3f;
+  color: #e6e6e6;
+  font-size: 1.1rem;
+}
+
+.readme-list {
+  list-style: square;
+}
+
+.readme-post {
   display: flex;
-  gap: 6px;
-  padding: 0.6rem 1rem;
-  background: #0f172a;
-  border-bottom: 1px solid #1f2937;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  color: #c7c7c7;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
-.editor-tab {
-  padding: 0.4rem 0.9rem;
-  border-radius: 12px 12px 0 0;
-  background: #111827;
-  color: #9ca3af;
+.readme-post a {
+  color: #7dd3fc !important;
+  text-decoration: none;
+}
+
+.readme-post span {
+  color: #9e9e9e;
   font-size: 0.85rem;
 }
 
-.editor-tab-active {
-  background: #0d1117;
-  color: #e5e7eb;
-  border: 1px solid #1f2937;
-  border-bottom-color: transparent;
+.readme-home h1,
+.readme-home h2,
+.readme-home h3,
+.readme-home h4,
+.readme-home h5,
+.readme-home h6,
+.readme-home p,
+.readme-home li,
+.readme-home strong {
+  color: #e6e6e6 !important;
 }
 
-.editor-body {
-  background: #0d1117;
-  padding: 1.4rem 1.6rem 1.8rem;
-  overflow-x: auto;
+.readme-home .readme-lede,
+.readme-home .readme-section ul,
+.readme-home .readme-post {
+  color: #c7c7c7 !important;
 }
 
-.editor-lines {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  counter-reset: editor-line;
-  display: grid;
-  gap: 6px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.editor-lines li {
-  position: relative;
-  padding-left: 3.2rem;
-  color: #e6e6e6;
-  white-space: pre-wrap;
-}
-
-.editor-lines li::before {
-  counter-increment: editor-line;
-  content: counter(editor-line);
-  position: absolute;
-  left: 0;
-  width: 2.4rem;
-  text-align: right;
-  color: #475569;
-}
-
-.tok-comment {
-  color: #6a9955;
-}
-
-.tok-key {
-  color: #569cd6;
-}
-
-.tok-var {
-  color: #9cdcfe;
-}
-
-.tok-op,
-.tok-punc {
-  color: #cbd5f5;
-}
-
-.tok-prop {
-  color: #dcdcaa;
-}
-
-.tok-string {
-  color: #ce9178;
-}
-
-.tok-link {
-  color: #8ab4f8 !important;
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(138, 180, 248, 0.6);
-}
-
-.tok-link:hover {
-  color: #a7c5ff !important;
-  border-bottom-color: rgba(167, 197, 255, 0.85);
+.readme-home a {
+  color: #7dd3fc !important;
 }
 
 @media (max-width: 720px) {
-  .editor-body {
-    padding: 1.1rem;
+  .readme-card,
+  .readme-section {
+    padding: 1.4rem;
   }
 
-  .editor-lines {
-    font-size: 0.88rem;
-  }
-
-  .editor-title,
-  .editor-status {
-    display: none;
+  .readme-post {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
