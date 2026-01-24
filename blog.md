@@ -3,8 +3,6 @@ layout: home
 permalink: /blog/
 ---
 
-# Blog
-
 Thoughts on software engineering, React, Next.js, Node.js, system design,
 and lessons from real production systems.
 
