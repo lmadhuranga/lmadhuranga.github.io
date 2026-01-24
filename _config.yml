@@ -11,3 +11,10 @@ exclude:
 
 header_pages:
   - blog.md
+
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - color-functions
+    - global-builtin

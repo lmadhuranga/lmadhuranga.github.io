@@ -1,0 +1,1 @@
+jekyll serve --source . --destination _site --livereload
