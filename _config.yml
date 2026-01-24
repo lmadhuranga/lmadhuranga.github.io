@@ -1,6 +1,17 @@
 # theme: jekyll-theme-minimal
 
 theme: minima
+title: Maduranga Senadheera
+description: Senior Full-Stack Developer | React • Next.js • Node.js
+
+exclude:
+  - index.html
+  - assets/
+  - certificates/
+  - versions/
+
+header_pages:
+  - blog.md
 
 # theme: jekyll-theme-cayman
 # theme: jekyll-theme-slate

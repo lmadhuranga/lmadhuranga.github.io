@@ -1,43 +1,12 @@
-# 👋 Hi, I’m Maduranga Senadheera
-
-**Senior Full-Stack Developer | React • Next.js • Node.js • NestJS • MongoDB**
-
-Welcome to my technical blog — a place where I share **real-world engineering knowledge**, **production lessons**, and **interview-ready insights** from over **10 years in software development**.
-
-I write about building scalable web applications, modern JavaScript architecture, and what actually matters when shipping software to production.
-
-
+---
+layout: home
+permalink: /blog/
 ---
 
-## ✍️ What This Blog Is About
+# Blog
 
-This blog focuses on **practical, experience-driven content**, not textbook theory.
-
-You’ll find posts about:
-
-* ⚛️ **React & Next.js**
-
-  * Performance optimization
-  * SSR, SSG, ISR explained with real use cases
-  * Component architecture patterns
-
-* 🧠 **Backend with Node.js & NestJS**
-
-  * Clean architecture
-  * Dependency Injection
-  * API design & scalability
-
-* 🗄️ **Databases (MongoDB & SQL)**
-
-  * Schema design
-  * Performance tuning
-  * Real production trade-offs
-
-* 🎯 **Interview Preparation**
-
-  * Senior-level questions
-  * System design thinking
-  * How to explain your experience clearly
+Thoughts on software engineering, React, Next.js, Node.js, system design,
+and lessons from real production systems.
 
 * 🚀 **Career & Engineering Growth**
 
