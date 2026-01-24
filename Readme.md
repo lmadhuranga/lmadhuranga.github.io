@@ -125,7 +125,7 @@ Simple task management application demonstrating clean state management and comp
 ### Advanced React — Coursera (Meta)
 
 <p>
-  <img src="certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg" width="100%" alt="Advanced React" />
+  <img src="assets/images/certificates/coursera.org-advanced-react~y2cv36k2r4jj.jpg" width="100%" alt="Advanced React" />
 </p>
 
 * Advanced component patterns & reusability
@@ -138,7 +138,7 @@ Simple task management application demonstrating clean state management and comp
 ### Agentic AI with LangChain & LangGraph — Coursera (IBM)
 
 <p>
-  <img src="certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg" width="100%" alt="Agentic AI" />
+  <img src="assets/images/certificates/coursera.org-agentic-ai-with-langchain-and-langgraph~dhgseqb8ppmz.jpg" width="100%" alt="Agentic AI" />
 </p>
 
 * Agent-based AI workflows & decision graphs
