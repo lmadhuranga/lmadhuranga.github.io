@@ -10,6 +10,8 @@ and the mindset shifts that come with learning something new after years in prod
 
 ---
 
+<br />
+
 ## 🚀 Career & Engineering Growth
 
 This section is about thinking clearly, learning continuously,
@@ -21,6 +23,8 @@ and adapting as an engineer — not chasing trends.
 - Learning AI as a full-stack developer (coming soon)
 
 ---
+
+<br />
 
 ## 📌 Notes & Posts
 
