@@ -25,17 +25,6 @@ and lessons from real production systems.
 
 ---
 
-## 🛠️ Tech Stack
-
-```txt
-Frontend  : React.js, Next.js, TypeScript
-Backend   : Node.js, NestJS
-Database  : MongoDB, PostgreSQL, MySQL
-DevOps    : Git, CI/CD, Docker (basic)
-````
-
----
-
 ## 📫 Connect With Me
 
 * 💼 LinkedIn: [https://linkedin.com/in/lmadhuranga](https://linkedin.com/in/lmadhuranga)
