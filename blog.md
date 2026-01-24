@@ -51,7 +51,7 @@ DevOps    : Git, CI/CD, Docker (basic)
 
 * 💼 LinkedIn: [https://www.linkedin.com/in/your-link](https://www.linkedin.com/in/your-link)
 * 🧑‍💻 GitHub: [https://github.com/your-username](https://github.com/your-username)
-* ✉️ Email: [your@email.com](mailto:your@email.com)
+* ✉️ Email: [lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com)
 
 ---
 
