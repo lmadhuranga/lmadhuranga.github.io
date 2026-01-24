@@ -15,10 +15,10 @@ let curiosityLevel = "increasing";
 let aiHype = false;
 
 function startJourney() {
-  console.log("Building production systems...");
+  print("Building production systems..")
   
   if (curiosityLevel === "increasing") {
-    console.log("Asking uncomfortable questions");
+    print("Asking uncomfortable questions..")
     learn("AI fundamentals");
   }
 }
@@ -40,7 +40,7 @@ function writeBlog() {
   // Not a tutorial
   // Not expert advice
   // Just notes from the journey
-  console.log("Writing to think clearly");
+  print("Writing to think clearly");
 }
 
 startJourney();
