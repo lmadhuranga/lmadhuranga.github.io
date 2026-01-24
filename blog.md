@@ -15,6 +15,4 @@ and lessons from real production systems.
 
 ## 📌  Featured Posts
 
-- None. 
-
-*(More coming soon…)*
+- 404: Posts not found (yet)... just kidding, posts coming soon.
