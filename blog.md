@@ -47,4 +47,4 @@ DevOps    : Git, CI/CD, Docker (basic)
 > **Good engineers write code.
 > Great engineers explain decisions.**
 
-Thanks for stopping by — happy coding 👨‍💻🚀
+Thanks for stopping by — happy coding 👨‍💻 🚀
