@@ -7,8 +7,6 @@ minima:
   show_author: false
 
 exclude:
-  - assets/
-  - certificates/
   - versions/
 
 header_pages:
