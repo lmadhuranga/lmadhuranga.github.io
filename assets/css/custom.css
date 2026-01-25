@@ -337,6 +337,7 @@
   fill: currentColor !important;
 }
 
+
 @media screen and (max-width: 600px) {
   .site-nav {
     border: none !important;

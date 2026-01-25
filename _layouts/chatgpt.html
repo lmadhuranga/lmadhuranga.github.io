@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/chatgpt.css" | relative_url }}">
+
+<article class="post chatgpt-layout" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header chatgpt-header">
+    <h1 class="post-title chatgpt-title" itemprop="name headline">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content chatgpt-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="post-footer-meta chatgpt-footer">
+    <span class="post-author-footer">Written by {{ site.author | escape }}</span>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {{ page.date | date: date_format }}
+    </time>
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

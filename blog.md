@@ -61,6 +61,12 @@ permalink: /blog/
       </a>
       <span>Jan 24, 2026</span>
     </div>
+    <div class="readme-post">
+      <a href="/2026/01/25/nextjs-pitfall-questions.html">
+        Next.js Pitfall Questions
+      </a>
+      <span>Jan 25, 2026</span>
+    </div>
   </section>
 
   <hr class="readme-divider" />

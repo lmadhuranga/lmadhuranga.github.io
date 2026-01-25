@@ -53,4 +53,4 @@ if is_port_in_use "$LIVERELOAD_PORT"; then
   LIVERELOAD_PORT="$(find_free_port 35730 35740)"
 fi
 
-jekyll serve --source . --destination _site --host 0.0.0.0 --port "$PORT" --livereload --livereload-port "$LIVERELOAD_PORT"
+jekyll serve --source . --destination _site --host 0.0.0.0 --port "$PORT" --livereload --livereload-port "$LIVERELOAD_PORT" --drafts
