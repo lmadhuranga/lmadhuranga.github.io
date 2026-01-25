@@ -68,7 +68,7 @@ permalink: /blog/
   <section class="readme-section">
     <h2>Status</h2>
     <p>
-      Still learning. Still writing. No hype. No shortcuts.
+      Still learning. Still writing. No hype. No shortcuts..
     </p>
   </section>
 </div>
