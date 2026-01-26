@@ -63,6 +63,10 @@
   color: var(--text-secondary);
 }
 
+.chatgpt-content .nt {
+  color: #569CD7 !important;
+}
+
 .chatgpt-content h2,
 .chatgpt-content h3 {
   color: var(--text-primary);
@@ -96,11 +100,21 @@
   border: 1px solid var(--border-light);
 }
 
+.chatgpt-content .highlight .nt {
+  color: #569CD7 !important;
+}
+
 .chatgpt-content .highlight pre,
 .chatgpt-content .highlight code {
   color: var(--text-primary) !important;
   background: transparent !important;
   font-size: 0.95rem;
+}
+
+.chatgpt-content .highlight span.nt,
+.chatgpt-content .highlight code .nt,
+.chatgpt-content .highlight pre .nt {
+  color: #569CD7 !important;
 }
 
 .chatgpt-content blockquote {
