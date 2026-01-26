@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Baby Steps Into AI: Moving Beyond the Chat Interface"
-date: 2026-01-27
+date: 2026-01-26
 ---
 
 ### From Chatting to Integrating AI
