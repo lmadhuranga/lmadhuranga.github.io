@@ -33,6 +33,12 @@ find_free_port() {
   return 1
 }
 
+get_local_ip() {
+  ipconfig getifaddr en0 2>/dev/null \
+    || ipconfig getifaddr en1 2>/dev/null \
+    || ifconfig | awk '/inet / && $2 != "127.0.0.1" { print $2; exit }'
+}
+
 # Free the main port if something is already listening.
 if is_port_in_use "$PORT"; then
   kill_port_listener "$PORT"
@@ -51,6 +57,15 @@ fi
 # Fallback to an open live reload port.
 if is_port_in_use "$LIVERELOAD_PORT"; then
   LIVERELOAD_PORT="$(find_free_port 35730 35740)"
+fi
+
+LOCAL_IP="$(get_local_ip || true)"
+if [[ -n "${LOCAL_IP:-}" ]]; then
+  echo "Local IP: ${LOCAL_IP}"
+  echo "Open: http://${LOCAL_IP}:${PORT}"
+else
+  echo "Local IP: (not found)"
+  echo "Open: http://localhost:${PORT}"
 fi
 
 jekyll serve --source . --destination _site --host 0.0.0.0 --port "$PORT" --livereload --livereload-port "$LIVERELOAD_PORT" --drafts

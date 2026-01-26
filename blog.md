@@ -55,18 +55,12 @@ permalink: /blog/
 
   <section class="readme-section">
     <h2>Latest Notes</h2>
+    {% for post in site.posts limit:5 %}
     <div class="readme-post">
-      <a href="/2026/01/24/why-im-documenting-my-journey-toward-ai-engineering.html">
-        Why I'm Documenting My Journey Toward AI Engineering
-      </a>
-      <span>Jan 24, 2026</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>{{ post.date | date: "%b %d, %Y" }}</span>
     </div>
-    <div class="readme-post">
-      <a href="/2026/01/25/nextjs-pitfall-questions.html">
-        Next.js Pitfall Questions
-      </a>
-      <span>Jan 25, 2026</span>
-    </div>
+    {% endfor %}
   </section>
 
   <hr class="readme-divider" />
