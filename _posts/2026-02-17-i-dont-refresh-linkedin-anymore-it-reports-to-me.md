@@ -55,6 +55,8 @@ Now LinkedIn works for me.
 
 Not the other way around. 💼⚡
 
+![LinkedIn watcher sidebar view](/assets/images/blogs/2026-02-17-i-dont-refresh-linkedin-anymore-it-reports-to-melinkedin-side.png)
+
 ## Simple Clean Flow
 
               ┌─────────────────┐
@@ -103,6 +105,10 @@ So I built a small control panel where I can:
 It stopped being a “job search.”
 
 It became a **job intelligence system**.
+
+![Admin dashboard panel view](/assets/images/blogs/2026-02-17-i-dont-refresh-linkedin-anymore-it-reports-to-meadmin-panel.png)
+
+![Admin dashboard settings view](/assets/images/blogs/2026-02-17-i-dont-refresh-linkedin-anymore-it-reports-to-meadmin-setting.png)
 
 ---
 
