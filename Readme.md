@@ -15,7 +15,7 @@
   />
 </p>
 
-📍 Dubai, UAE · 📧 [lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com) · 📞 +971 52 134 4027 ·
+📍 Dubai, UAE · 📧 [lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com) · 📞 +94 740-40-63-05 ·
 💼 [LinkedIn](https://www.linkedin.com/in/lmadhuranga/) · 💻 [GitHub](https://github.com/lmadhuranga)
 
 ---
@@ -150,7 +150,7 @@ Simple task management application demonstrating clean state management and comp
 
 ## 📬 Contact
 
-📍 Dubai, UAE · 📧 **[lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com)** · 📞 **+971 52 134 4027** ·
+📍 Dubai, UAE · 📧 **[lilan.maduranga@gmail.com](mailto:lilan.maduranga@gmail.com)** · 📞 **+94 740-40-63-05** ·
 💼 [LinkedIn](https://www.linkedin.com/in/lmadhuranga/) · 💻 [GitHub](https://github.com/lmadhuranga)
 
 ---
